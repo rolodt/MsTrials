@@ -1,0 +1,114 @@
+DEBUG 2014-12-14 13:31:08,832 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2014-12-14 13:31:10,910 [1    ] Abp.Modules.DefaultModuleFinder          - Found 11 ABP modules in total.
+DEBUG 2014-12-14 13:31:10,915 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.4.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-12-14 13:31:10,916 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpCoreModule, Abp, Version=0.4.4.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-12-14 13:31:10,916 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.4.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-12-14 13:31:10,917 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.4.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-12-14 13:31:10,917 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.4.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-12-14 13:31:10,917 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.4.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-12-14 13:31:10,917 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MsTrials.MsTrialsApplicationModule, MsTrials.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-12-14 13:31:10,917 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MsTrials.MsTrialsCoreModule, MsTrials.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-12-14 13:31:10,917 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MsTrials.MsTrialsDataModule, MsTrials.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-12-14 13:31:10,917 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MsTrials.MsTrialsWebApiModule, MsTrials.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-12-14 13:31:10,917 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MsTrials.Web.MsTrialsWebModule, MsTrials.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-12-14 13:31:10,920 [1    ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2014-12-14 13:31:11,757 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2014-12-14 13:42:43,792 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2014-12-14 13:42:44,715 [1    ] Abp.Modules.DefaultModuleFinder          - Found 11 ABP modules in total.
+DEBUG 2014-12-14 13:42:44,719 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.4.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-12-14 13:42:44,720 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpCoreModule, Abp, Version=0.4.4.2, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-12-14 13:42:44,721 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.4.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-12-14 13:42:44,721 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.4.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-12-14 13:42:44,721 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.4.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-12-14 13:42:44,721 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.4.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-12-14 13:42:44,721 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MsTrials.MsTrialsApplicationModule, MsTrials.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-12-14 13:42:44,721 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MsTrials.MsTrialsCoreModule, MsTrials.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-12-14 13:42:44,721 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MsTrials.MsTrialsDataModule, MsTrials.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-12-14 13:42:44,721 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MsTrials.MsTrialsWebApiModule, MsTrials.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-12-14 13:42:44,722 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MsTrials.Web.MsTrialsWebModule, MsTrials.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-12-14 13:42:44,724 [1    ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2014-12-14 13:42:45,377 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2014-12-28 19:19:14,889 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2014-12-28 19:19:15,804 [1    ] Abp.Modules.DefaultModuleFinder          - Found 11 ABP modules in total.
+DEBUG 2014-12-28 19:19:15,809 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-12-28 19:19:15,811 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpCoreModule, Abp, Version=0.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-12-28 19:19:15,811 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-12-28 19:19:15,811 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-12-28 19:19:15,811 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-12-28 19:19:15,811 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-12-28 19:19:15,811 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MsTrials.MsTrialsApplicationModule, MsTrials.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-12-28 19:19:15,811 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MsTrials.MsTrialsCoreModule, MsTrials.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-12-28 19:19:15,811 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MsTrials.MsTrialsDataModule, MsTrials.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-12-28 19:19:15,811 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MsTrials.MsTrialsWebApiModule, MsTrials.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-12-28 19:19:15,812 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MsTrials.Web.MsTrialsWebModule, MsTrials.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2014-12-28 19:19:15,814 [1    ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2014-12-28 19:19:16,436 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-02-12 21:35:30,687 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-02-12 21:35:32,065 [1    ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-02-12 21:35:32,068 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.5.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-02-12 21:35:32,069 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.5.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-02-12 21:35:32,069 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.5.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-02-12 21:35:32,069 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.5.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-02-12 21:35:32,070 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.5.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-02-12 21:35:32,070 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.5.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-02-12 21:35:32,070 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MsTrials.MsTrialsApplicationModule, MsTrials.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-02-12 21:35:32,070 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MsTrials.MsTrialsCoreModule, MsTrials.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-02-12 21:35:32,070 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MsTrials.MsTrialsDataModule, MsTrials.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-02-12 21:35:32,070 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MsTrials.MsTrialsWebApiModule, MsTrials.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-02-12 21:35:32,070 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MsTrials.Web.MsTrialsWebModule, MsTrials.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-02-12 21:35:32,072 [1    ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-02-12 21:35:32,866 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-02-28 12:30:20,067 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-02-28 12:30:21,303 [1    ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-02-28 12:30:21,307 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.5.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-02-28 12:30:21,308 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.5.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-02-28 12:30:21,309 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.5.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-02-28 12:30:21,309 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.5.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-02-28 12:30:21,309 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.5.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-02-28 12:30:21,309 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.5.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-02-28 12:30:21,309 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MsTrials.MsTrialsApplicationModule, MsTrials.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-02-28 12:30:21,309 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MsTrials.MsTrialsCoreModule, MsTrials.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-02-28 12:30:21,309 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MsTrials.MsTrialsDataModule, MsTrials.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-02-28 12:30:21,309 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MsTrials.MsTrialsWebApiModule, MsTrials.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-02-28 12:30:21,309 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MsTrials.Web.MsTrialsWebModule, MsTrials.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-02-28 12:30:21,312 [1    ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-02-28 12:30:22,148 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-02-28 12:30:23,394 [1    ] Abp.Localization.LocalizationManager     - Initializing 2 localization sources.
+DEBUG 2015-02-28 12:30:23,431 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: MsTrials
+DEBUG 2015-02-28 12:30:23,546 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2015-03-06 22:55:35,541 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-03-06 22:55:36,726 [1    ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-03-06 22:55:36,730 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.5.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-03-06 22:55:36,731 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.5.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-03-06 22:55:36,731 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.5.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-03-06 22:55:36,731 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.5.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-03-06 22:55:36,732 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.5.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-03-06 22:55:36,732 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.5.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-03-06 22:55:36,732 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MsTrials.MsTrialsApplicationModule, MsTrials.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-03-06 22:55:36,732 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MsTrials.MsTrialsCoreModule, MsTrials.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-03-06 22:55:36,732 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MsTrials.MsTrialsDataModule, MsTrials.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-03-06 22:55:36,732 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MsTrials.MsTrialsWebApiModule, MsTrials.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-03-06 22:55:36,732 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MsTrials.Web.MsTrialsWebModule, MsTrials.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-03-06 22:55:36,735 [1    ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-03-06 22:55:37,557 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-03-06 22:55:39,366 [1    ] Abp.Localization.LocalizationManager     - Initializing 2 localization sources.
+DEBUG 2015-03-06 22:55:39,389 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: MsTrials
+DEBUG 2015-03-06 22:55:39,389 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2015-03-06 23:00:56,388 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-03-06 23:00:57,505 [1    ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-03-06 23:00:57,509 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.5.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-03-06 23:00:57,511 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.5.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-03-06 23:00:57,511 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.5.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-03-06 23:00:57,511 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.5.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-03-06 23:00:57,511 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.5.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-03-06 23:00:57,511 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.5.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-03-06 23:00:57,511 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MsTrials.MsTrialsApplicationModule, MsTrials.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-03-06 23:00:57,511 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MsTrials.MsTrialsCoreModule, MsTrials.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-03-06 23:00:57,511 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MsTrials.MsTrialsDataModule, MsTrials.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-03-06 23:00:57,511 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MsTrials.MsTrialsWebApiModule, MsTrials.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-03-06 23:00:57,512 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: MsTrials.Web.MsTrialsWebModule, MsTrials.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-03-06 23:00:57,514 [1    ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-03-06 23:00:58,295 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-03-06 23:00:59,506 [1    ] Abp.Localization.LocalizationManager     - Initializing 2 localization sources.
+DEBUG 2015-03-06 23:00:59,511 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: MsTrials
+DEBUG 2015-03-06 23:00:59,511 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb

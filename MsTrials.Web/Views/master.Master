@@ -1,0 +1,107 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master.master.cs" Inherits="MsTrials.Web.Views.master" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Your description goes here...">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>MS Trials - Inicio</title>
+
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,400italic,700italic">
+
+	<script src="js/respond.min.js"></script>
+	<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+<body id="home">
+    <form id="form1" runat="server">
+        <ajaxToolkit:ToolkitScriptManager ID="TSM" EnablePageMethods="true" runat="server" />
+        <asp:Panel ID="pnlWrapper" runat="server">
+            <div id="wrapper"> <%-- center aligns the Site --%>
+	            <header>
+		            <div class="header-inner">
+			            <a href="index.html" id="logo"><img src="img/logo.png" alt="MS Trials"></a>
+			
+			            <div id="nav">
+				            <ul>
+					            <li><a href="index.html" id="current">Home</a></li>
+					            <li><a href="estudios.html">Estudios</a></li>
+					            <li><a href="ranking.html">Ranking</a></li>
+					            <li><a href="autores.html">Autores</a></li>
+					            <li><a href="contacto.html">Contacto</a></li>
+				            </ul>
+			            </div>
+		            </div><!-- /header-inner -->
+	            </header>
+
+                <div id="content">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"/>
+                </div>
+
+	            <div class="footer">
+		            <div class="footer-inner">
+			            <div class="one_fourth">				
+				            <p><img src="img/logo-footer.png" alt="" class="center"></p>
+			            </div>
+
+			            <div class="one_fourth">
+				            <h3>Contacto</h3>
+				
+				            <p><img src="img/logo_cem_footer.png" alt="" class="cem">
+					            <b>5123.4567</b><br />
+					            <a href="mailto:info@soporte.com.ar">info@soporte.com.ar</a><br />
+					            <a href="http://www.mstrials.com">www.mstrials.com</a></p>
+			            </div>
+
+			            <div class="one_fourth">
+				            <h3>Newsletter</h3>
+				
+				            <p>Suscribite a nuestra aplicación y enterate de los últimos estudios.</p>
+				
+				            <!-- newsletter -->
+				            <form action="form.php" id="form-newsletter" method="post">
+					            <input type="text" placeholder="E-mail" name="email" class="required email" size="28">
+
+					            <input type="hidden" name="form" value="newsletter">
+					            <button type="submit" name="submit">&#8594;</button>
+				            </form>
+			            </div>
+
+			            <div class="one_fourth last">
+				            <h3>Seguinos</h3>
+				
+				            <ul id="social">
+					            <li><a href="#" id="facebook">Facebook</a></li>
+					            <li><a href="#" id="twitter">Twitter</a></li>
+					            <li><a href="#" id="google">Google Plus</a></li>
+					            <li><a href="#" id="youtube">YouTube</a></li>
+				            </ul>			
+			            </div><div class="clear"></div>
+		            </div><!-- /footer-inner -->
+	            </div><!-- /footer -->
+
+	            <footer>
+		            <ul>
+			            <li><a href="index.html" id="current">Home</a></li>
+					            <li><a href="estudios.html">Estudios</a></li>
+					            <li><a href="ranking.html">Ranking</a></li>
+					            <li><a href="autores.html">Autores</a></li>
+					            <li><a href="contacto.html">Contacto</a></li>
+		            </ul>
+
+		            <p>Copyright &copy; 2015 MS Trials.</p>
+	            </footer>
+	
+	            <!-- JavaScript -->
+	            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	            <script src="js/scripts.js"></script>
+            </div>
+        </asp:Panel>
+    </form>
+</body>
+</html>
