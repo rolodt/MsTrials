@@ -95,7 +95,51 @@
       <HintPath>..\packages\log4net.1.2.10\lib\2.0\log4net.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.1.0\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.1.0\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.1.0\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.Core">
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.Core.2.2.0\lib\net45\Microsoft.AspNet.SignalR.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.SystemWeb">
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.SystemWeb.2.2.0\lib\net45\Microsoft.AspNet.SignalR.SystemWeb.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Owin, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Owin.3.0.0\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.0.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.0.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.3.0.0\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.3.0.0\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.3.0.0\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.3.0.0\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.0.0\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.3.0.0\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -109,6 +153,10 @@
     <Reference Include="Nito.AsyncEx.Enlightenment">
       <HintPath>..\packages\Nito.AsyncEx.3.0.0\lib\net45\Nito.AsyncEx.Enlightenment.dll</HintPath>
     </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
     <Reference Include="System.Collections.Immutable">
       <HintPath>..\packages\Microsoft.Bcl.Immutable.1.0.34\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
     </Reference>
@@ -117,6 +165,8 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.2\lib\net45\System.Net.Http.Formatting.dll</HintPath>
     </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -207,10 +257,215 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\AdminLTE.css" />
+    <Content Include="Content\css\AdminLTE.min.css" />
+    <Content Include="Content\css\bootstrap-theme.min.css" />
+    <Content Include="Content\css\bootstrap.min.css" />
+    <Content Include="Content\css\flexslider.css" />
+    <Content Include="Content\css\fonts\jsglyph.svg" />
+    <Content Include="Content\css\images\close-20-333.png" />
+    <Content Include="Content\css\images\close-20.png" />
+    <Content Include="Content\css\images\icon-sprite-16x16.jpg" />
+    <Content Include="Content\css\images\icon-sprite-20x20.jpg" />
+    <Content Include="Content\css\images\icon-sprite-32x32.jpg" />
+    <Content Include="Content\css\images\resize-handle.png" />
+    <Content Include="Content\css\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\css\jquery.jspanel.min.css" />
+    <Content Include="Content\css\jsglyph.css" />
+    <Content Include="Content\css\nvts.css" />
+    <Content Include="Content\css\shCore.css" />
+    <Content Include="Content\css\shThemeDefault.css" />
+    <Content Include="Content\css\Site.css" />
+    <Content Include="Content\css\skins\skin-black.css" />
+    <Content Include="Content\css\skins\skin-black.min.css" />
+    <Content Include="Content\css\skins\skin-blue.css" />
+    <Content Include="Content\css\skins\skin-blue.min.css" />
+    <Content Include="Content\css\skins\skin-green.css" />
+    <Content Include="Content\css\skins\skin-green.min.css" />
+    <Content Include="Content\css\skins\skin-purple.css" />
+    <Content Include="Content\css\skins\skin-purple.min.css" />
+    <Content Include="Content\css\skins\skin-red.css" />
+    <Content Include="Content\css\skins\skin-red.min.css" />
+    <Content Include="Content\css\skins\skin-yellow.css" />
+    <Content Include="Content\css\skins\skin-yellow.min.css" />
+    <Content Include="Content\css\skins\_all-skins.css" />
+    <Content Include="Content\css\skins\_all-skins.min.css" />
+    <Content Include="Content\css\ValidationHelpers.css" />
     <Content Include="Content\flags\famfamfam-flags.css" />
     <Content Include="Content\flags\famfamfam-flags.png" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\img\asma_01.jpg" />
+    <Content Include="Content\img\asma_02.jpg" />
+    <Content Include="Content\img\bg-black-2.png" />
+    <Content Include="Content\img\bg-black.png" />
+    <Content Include="Content\img\bg_articulo_home-2.html" />
+    <Content Include="Content\img\bg_articulo_home.html" />
+    <Content Include="Content\img\bg_busqueda-2.html" />
+    <Content Include="Content\img\bg_busqueda.html" />
+    <Content Include="Content\img\bg_click-2.png" />
+    <Content Include="Content\img\bg_click.png" />
+    <Content Include="Content\img\bg_flexlider-2.png" />
+    <Content Include="Content\img\bg_flexlider.png" />
+    <Content Include="Content\img\bg_main-2.html" />
+    <Content Include="Content\img\bg_main.html" />
+    <Content Include="Content\img\bg_px-2.jpg" />
+    <Content Include="Content\img\bg_px.jpg" />
+    <Content Include="Content\img\bg_subtit-2.jpg" />
+    <Content Include="Content\img\bg_subtit.jpg" />
+    <Content Include="Content\img\bg_tit_pg-2.png" />
+    <Content Include="Content\img\bg_tit_pg.png" />
+    <Content Include="Content\img\bg_wrapped-2.jpg" />
+    <Content Include="Content\img\bg_wrapped.jpg" />
+    <Content Include="Content\img\bt_slider-2.png" />
+    <Content Include="Content\img\bt_slider.png" />
+    <Content Include="Content\img\bt_slider_on-2.png" />
+    <Content Include="Content\img\bt_slider_on.png" />
+    <Content Include="Content\img\bt_slider_over-2.png" />
+    <Content Include="Content\img\bt_slider_over.png" />
+    <Content Include="Content\img\caps_01.jpg" />
+    <Content Include="Content\img\close-20-333.png" />
+    <Content Include="Content\img\close-20.png" />
+    <Content Include="Content\img\diabetes_01.jpg" />
+    <Content Include="Content\img\diabetes_02.jpg" />
+    <Content Include="Content\img\diabetes_03.png" />
+    <Content Include="Content\img\epoc_01.jpg" />
+    <Content Include="Content\img\epoc_02.png" />
+    <Content Include="Content\img\esclerosis_01.jpg" />
+    <Content Include="Content\img\esclerosis_02.png" />
+    <Content Include="Content\img\esclerosis_03.png" />
+    <Content Include="Content\img\esclerosis_04.jpg" />
+    <Content Include="Content\img\Farmacia_01.jpg" />
+    <Content Include="Content\img\fibrosis_quistica_01.jpg" />
+    <Content Include="Content\img\fibrosis_quistica_video.jpg" />
+    <Content Include="Content\img\ficha_diabetes.jpg" />
+    <Content Include="Content\img\ficha_hta.jpg" />
+    <Content Include="Content\img\filete_default-2.jpg" />
+    <Content Include="Content\img\filete_default.jpg" />
+    <Content Include="Content\img\footer_px-2.jpg" />
+    <Content Include="Content\img\footer_px.jpg" />
+    <Content Include="Content\img\fq_ejercicios_adolescentes.jpg" />
+    <Content Include="Content\img\fq_ejercicios_adultos.jpg" />
+    <Content Include="Content\img\fq_ejercicios_ninios.jpg" />
+    <Content Include="Content\img\fq_nutricion_adolescentes.jpg" />
+    <Content Include="Content\img\fq_nutricion_adultos.jpg" />
+    <Content Include="Content\img\fq_nutricion_lactantes.jpg" />
+    <Content Include="Content\img\fq_nutricion_pequenos.jpg" />
+    <Content Include="Content\img\Herramientas_01.jpg" />
+    <Content Include="Content\img\hipertension_01.jpg" />
+    <Content Include="Content\img\hipertension_02.jpg" />
+    <Content Include="Content\img\hr_main-2.jpg" />
+    <Content Include="Content\img\hr_main.jpg" />
+    <Content Include="Content\img\icon-sprite-16x16.jpg" />
+    <Content Include="Content\img\icon-sprite-20x20.jpg" />
+    <Content Include="Content\img\icon-sprite-32x32.jpg" />
+    <Content Include="Content\img\ico_home.jpg" />
+    <Content Include="Content\img\ico_mail.jpg" />
+    <Content Include="Content\img\ico_web.jpg" />
+    <Content Include="Content\img\img_home_01.jpg" />
+    <Content Include="Content\img\img_home_02.jpg" />
+    <Content Include="Content\img\img_home_03.jpg" />
+    <Content Include="Content\img\img_home_04.jpg" />
+    <Content Include="Content\img\img_home_06.jpg" />
+    <Content Include="Content\img\img_home_07.jpg" />
+    <Content Include="Content\img\logo_datos-2.jpg" />
+    <Content Include="Content\img\logo_datos.jpg" />
+    <Content Include="Content\img\logo_face.png" />
+    <Content Include="Content\img\logo_face_btn-2.png" />
+    <Content Include="Content\img\logo_face_btn.png" />
+    <Content Include="Content\img\logo_nvts-2.png" />
+    <Content Include="Content\img\logo_nvts.png" />
+    <Content Include="Content\img\logo_nvts_h.png" />
+    <Content Include="Content\img\logo_sitios_alma.jpg" />
+    <Content Include="Content\img\logo_sitios_asociacion_diabetes.jpg" />
+    <Content Include="Content\img\logo_sitios_cardiovascular.jpg" />
+    <Content Include="Content\img\logo_sitios_cuidadores_dibeticos.jpg" />
+    <Content Include="Content\img\logo_sitios_lapdi.jpg" />
+    <Content Include="Content\img\logo_sitios_novartis.jpg" />
+    <Content Include="Content\img\logo_sitios_oftalmologia.jpg" />
+    <Content Include="Content\img\logo_sitios_panamericana_salud.jpg" />
+    <Content Include="Content\img\logo_twitter.png" />
+    <Content Include="Content\img\logo_twitter_btn-2.png" />
+    <Content Include="Content\img\logo_twitter_btn.png" />
+    <Content Include="Content\img\logo_viviendo.jpg" />
+    <Content Include="Content\img\logo_viviendo_blanco.png" />
+    <Content Include="Content\img\maculopatia_01.jpg" />
+    <Content Include="Content\img\maculopatia_02.jpg" />
+    <Content Include="Content\img\maculopatia_03.jpg" />
+    <Content Include="Content\img\maculopatia_04.jpg" />
+    <Content Include="Content\img\marker.png" />
+    <Content Include="Content\img\mismeds.png" />
+    <Content Include="Content\img\mismeds_02.jpg" />
+    <Content Include="Content\img\novedades_02_caminando.jpg" />
+    <Content Include="Content\img\novedades_02_grafico.png" />
+    <Content Include="Content\img\novedades_batidos_01.jpg" />
+    <Content Include="Content\img\novedades_batidos_02.jpg" />
+    <Content Include="Content\img\novedades_batidos_03.jpg" />
+    <Content Include="Content\img\novedades_batidos_04.jpg" />
+    <Content Include="Content\img\novedades_batidos_05.jpg" />
+    <Content Include="Content\img\novedades_batidos_06.jpg" />
+    <Content Include="Content\img\novedad_01.jpg" />
+    <Content Include="Content\img\palito-2.png" />
+    <Content Include="Content\img\palito.png" />
+    <Content Include="Content\img\patologia_01_hipertension.jpg" />
+    <Content Include="Content\img\patologia_02_diabetes.jpg" />
+    <Content Include="Content\img\patologia_05_macular.jpg" />
+    <Content Include="Content\img\patologia_06_fibrosis.jpg" />
+    <Content Include="Content\img\patologia_07_epoc.jpg" />
+    <Content Include="Content\img\patologia_08_epilepsia.jpg" />
+    <Content Include="Content\img\patologia_09_parkinson.jpg" />
+    <Content Include="Content\img\patologia_10_urticaria.jpg" />
+    <Content Include="Content\img\patologia_11_asma.jpg" />
+    <Content Include="Content\img\planificacion_visitas.jpg" />
+    <Content Include="Content\img\programas_especiales.jpg" />
+    <Content Include="Content\img\progress-2.html" />
+    <Content Include="Content\img\progress.html" />
+    <Content Include="Content\img\px_legales-2.jpg" />
+    <Content Include="Content\img\px_legales.jpg" />
+    <Content Include="Content\img\px_menu-2.jpg" />
+    <Content Include="Content\img\px_menu.jpg" />
+    <Content Include="Content\img\px_titulo-2.jpg" />
+    <Content Include="Content\img\px_titulo.jpg" />
+    <Content Include="Content\img\px_tit_activ-2.jpg" />
+    <Content Include="Content\img\px_tit_activ.jpg" />
+    <Content Include="Content\img\px_wrapped_top-2.jpg" />
+    <Content Include="Content\img\px_wrapped_top.jpg" />
+    <Content Include="Content\img\recetas_01.jpg" />
+    <Content Include="Content\img\recetas_10_porciones.png" />
+    <Content Include="Content\img\recetas_12_porciones.png" />
+    <Content Include="Content\img\recetas_6_porciones.png" />
+    <Content Include="Content\img\recetas_8_porciones.png" />
+    <Content Include="Content\img\recetas_porciones.png" />
+    <Content Include="Content\img\resize-handle.png" />
+    <Content Include="Content\img\shadow-2.png" />
+    <Content Include="Content\img\shadow.png" />
+    <Content Include="Content\img\slider_foot-2.jpg" />
+    <Content Include="Content\img\slider_foot.jpg" />
+    <Content Include="Content\img\ui-icons_454545_256x240.png" />
+    <Content Include="Content\img\urticaria_01.jpg" />
+    <Content Include="Content\img\urticaria_02.png" />
+    <Content Include="Content\img\urticaria_03.png" />
+    <Content Include="Content\img\utiles_03_recetas.png" />
+    <Content Include="Content\img\utiles_04_diccionario.png" />
+    <Content Include="Content\img\utiles_05_links.png" />
+    <Content Include="Content\img\utiles_06_novedades.png" />
+    <Content Include="Content\img\utiles_07_videoteca.png" />
+    <Content Include="Content\img\ver-2.png" />
+    <Content Include="Content\img\ver.png" />
+    <Content Include="Content\img\videos_alimentacion_hipertension.jpg" />
+    <Content Include="Content\img\videos_etiquetas_nutricionales.jpg" />
+    <Content Include="Content\img\videos_resp_aniestress.jpg" />
+    <Content Include="Content\img\videos_resp_diabetes.jpg" />
+    <Content Include="Content\img\videos_resp_patologias.jpg" />
+    <Content Include="Content\plugins\datatables\dataTables.bootstrap.css" />
+    <Content Include="Content\plugins\datatables\dataTables.bootstrap.js" />
+    <Content Include="Content\plugins\datatables\images\sort_asc.png" />
+    <Content Include="Content\plugins\datatables\images\sort_asc_disabled.png" />
+    <Content Include="Content\plugins\datatables\images\sort_both.png" />
+    <Content Include="Content\plugins\datatables\images\sort_desc.png" />
+    <Content Include="Content\plugins\datatables\images\sort_desc_disabled.png" />
+    <Content Include="Content\plugins\datatables\jquery.dataTables.js" />
     <Content Include="Content\themes\base\accordion.css" />
     <Content Include="Content\themes\base\all.css" />
     <Content Include="Content\themes\base\autocomplete.css" />
@@ -254,6 +509,34 @@
     <Content Include="Localization\AbpWeb\AbpWeb.xml" />
     <Content Include="Localization\MsTrials\MsTrials.tr.xml" />
     <Content Include="Localization\MsTrials\MsTrials.xml" />
+    <Content Include="Resources\css\custom.css" />
+    <Content Include="Resources\css\style.css" />
+    <Content Include="Resources\img\agent-1.jpg" />
+    <Content Include="Resources\img\agent-2.jpg" />
+    <Content Include="Resources\img\agent-3.jpg" />
+    <Content Include="Resources\img\agent-4.jpg" />
+    <Content Include="Resources\img\blockquote.png" />
+    <Content Include="Resources\img\favicon.ico" />
+    <Content Include="Resources\img\featured.png" />
+    <Content Include="Resources\img\line-horizontal.png" />
+    <Content Include="Resources\img\listing-1.jpg" />
+    <Content Include="Resources\img\listing-info-area.png" />
+    <Content Include="Resources\img\listing-info-baths.png" />
+    <Content Include="Resources\img\listing-info-beds.png" />
+    <Content Include="Resources\img\logo-footer.png" />
+    <Content Include="Resources\img\logo.png" />
+    <Content Include="Resources\img\logo_cem_footer.png" />
+    <Content Include="Resources\img\mosaic.png" />
+    <Content Include="Resources\img\price.png" />
+    <Content Include="Resources\img\property-1.jpg" />
+    <Content Include="Resources\img\slider-1.jpg" />
+    <Content Include="Resources\img\slider-2.jpg" />
+    <Content Include="Resources\img\slider-3.jpg" />
+    <Content Include="Resources\img\sprite.png" />
+    <Content Include="Resources\img\testimonial.jpg" />
+    <Content Include="Resources\img\transparent-black-010.png" />
+    <Content Include="Resources\js\respond.min.js" />
+    <Content Include="Resources\js\scripts.js" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
     <Content Include="Scripts\angular-aria.js" />
@@ -307,6 +590,65 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\plugins\bootstrap-wysihtml5\bootstrap3-wysihtml5.all.min.js" />
+    <Content Include="Scripts\plugins\bootstrap-wysihtml5\bootstrap3-wysihtml5.css" />
+    <Content Include="Scripts\plugins\bootstrap-wysihtml5\bootstrap3-wysihtml5.js" />
+    <Content Include="Scripts\plugins\bootstrap-wysihtml5\bootstrap3-wysihtml5.min.css" />
+    <Content Include="Scripts\plugins\datepicker\bootstrap-datepicker.js" />
+    <Content Include="Scripts\plugins\datepicker\datepicker3.css" />
+    <Content Include="Scripts\plugins\datepicker\locales\bootstrap-datepicker.ar.js" />
+    <Content Include="Scripts\plugins\datepicker\locales\bootstrap-datepicker.az.js" />
+    <Content Include="Scripts\plugins\datepicker\locales\bootstrap-datepicker.bg.js" />
+    <Content Include="Scripts\plugins\datepicker\locales\bootstrap-datepicker.ca.js" />
+    <Content Include="Scripts\plugins\datepicker\locales\bootstrap-datepicker.cs.js" />
+    <Content Include="Scripts\plugins\datepicker\locales\bootstrap-datepicker.cy.js" />
+    <Content Include="Scripts\plugins\datepicker\locales\bootstrap-datepicker.da.js" />
+    <Content Include="Scripts\plugins\datepicker\locales\bootstrap-datepicker.de.js" />
+    <Content Include="Scripts\plugins\datepicker\locales\bootstrap-datepicker.el.js" />
+    <Content Include="Scripts\plugins\datepicker\locales\bootstrap-datepicker.es.js" />
+    <Content Include="Scripts\plugins\datepicker\locales\bootstrap-datepicker.et.js" />
+    <Content Include="Scripts\plugins\datepicker\locales\bootstrap-datepicker.fa.js" />
+    <Content Include="Scripts\plugins\datepicker\locales\bootstrap-datepicker.fi.js" />
+    <Content Include="Scripts\plugins\datepicker\locales\bootstrap-datepicker.fr.js" />
+    <Content Include="Scripts\plugins\datepicker\locales\bootstrap-datepicker.gl.js" />
+    <Content Include="Scripts\plugins\datepicker\locales\bootstrap-datepicker.he.js" />
+    <Content Include="Scripts\plugins\datepicker\locales\bootstrap-datepicker.hr.js" />
+    <Content Include="Scripts\plugins\datepicker\locales\bootstrap-datepicker.hu.js" />
+    <Content Include="Scripts\plugins\datepicker\locales\bootstrap-datepicker.id.js" />
+    <Content Include="Scripts\plugins\datepicker\locales\bootstrap-datepicker.is.js" />
+    <Content Include="Scripts\plugins\datepicker\locales\bootstrap-datepicker.it.js" />
+    <Content Include="Scripts\plugins\datepicker\locales\bootstrap-datepicker.ja.js" />
+    <Content Include="Scripts\plugins\datepicker\locales\bootstrap-datepicker.ka.js" />
+    <Content Include="Scripts\plugins\datepicker\locales\bootstrap-datepicker.kk.js" />
+    <Content Include="Scripts\plugins\datepicker\locales\bootstrap-datepicker.kr.js" />
+    <Content Include="Scripts\plugins\datepicker\locales\bootstrap-datepicker.lt.js" />
+    <Content Include="Scripts\plugins\datepicker\locales\bootstrap-datepicker.lv.js" />
+    <Content Include="Scripts\plugins\datepicker\locales\bootstrap-datepicker.mk.js" />
+    <Content Include="Scripts\plugins\datepicker\locales\bootstrap-datepicker.ms.js" />
+    <Content Include="Scripts\plugins\datepicker\locales\bootstrap-datepicker.nb.js" />
+    <Content Include="Scripts\plugins\datepicker\locales\bootstrap-datepicker.nl-BE.js" />
+    <Content Include="Scripts\plugins\datepicker\locales\bootstrap-datepicker.nl.js" />
+    <Content Include="Scripts\plugins\datepicker\locales\bootstrap-datepicker.no.js" />
+    <Content Include="Scripts\plugins\datepicker\locales\bootstrap-datepicker.pl.js" />
+    <Content Include="Scripts\plugins\datepicker\locales\bootstrap-datepicker.pt-BR.js" />
+    <Content Include="Scripts\plugins\datepicker\locales\bootstrap-datepicker.pt.js" />
+    <Content Include="Scripts\plugins\datepicker\locales\bootstrap-datepicker.ro.js" />
+    <Content Include="Scripts\plugins\datepicker\locales\bootstrap-datepicker.rs-latin.js" />
+    <Content Include="Scripts\plugins\datepicker\locales\bootstrap-datepicker.rs.js" />
+    <Content Include="Scripts\plugins\datepicker\locales\bootstrap-datepicker.ru.js" />
+    <Content Include="Scripts\plugins\datepicker\locales\bootstrap-datepicker.sk.js" />
+    <Content Include="Scripts\plugins\datepicker\locales\bootstrap-datepicker.sl.js" />
+    <Content Include="Scripts\plugins\datepicker\locales\bootstrap-datepicker.sq.js" />
+    <Content Include="Scripts\plugins\datepicker\locales\bootstrap-datepicker.sv.js" />
+    <Content Include="Scripts\plugins\datepicker\locales\bootstrap-datepicker.sw.js" />
+    <Content Include="Scripts\plugins\datepicker\locales\bootstrap-datepicker.th.js" />
+    <Content Include="Scripts\plugins\datepicker\locales\bootstrap-datepicker.tr.js" />
+    <Content Include="Scripts\plugins\datepicker\locales\bootstrap-datepicker.ua.js" />
+    <Content Include="Scripts\plugins\datepicker\locales\bootstrap-datepicker.vi.js" />
+    <Content Include="Scripts\plugins\datepicker\locales\bootstrap-datepicker.zh-CN.js" />
+    <Content Include="Scripts\plugins\datepicker\locales\bootstrap-datepicker.zh-TW.js" />
     <Content Include="Scripts\errors.json" />
     <Content Include="Scripts\angular-touch.min.js.map" />
     <Content Include="Scripts\angular-sanitize.min.js.map" />
@@ -320,7 +662,36 @@
     <Content Include="Scripts\angular.min.js.map" />
     <Content Include="Abp\Framework\styles\abp.less" />
     <Content Include="Abp\Framework\styles\abp.css.map" />
+    <Content Include="Resources\img\.DS_Store" />
+    <Content Include="Content\css\fonts\jsglyph.eot" />
+    <Content Include="Content\css\fonts\jsglyph.ttf" />
+    <Content Include="Content\css\fonts\jsglyph.woff" />
+    <Content Include="Content\css\fonts\jsglyph.woff2" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Resources\OnlineTest.json" />
+    <EntityDeploy Include="Models\MsTrials.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>MsTrials.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\MsTrials.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MsTrials.edmx</DependentUpon>
+      <LastGenOutput>MsTrials.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\MsTrials.edmx.diagram">
+      <DependentUpon>MsTrials.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\MsTrials.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MsTrials.edmx</DependentUpon>
+      <LastGenOutput>MsTrials.cs</LastGenOutput>
+    </Content>
     <None Include="Scripts\jquery-2.1.1.intellisense.js" />
+    <Content Include="Scripts\plugins\fastclick\fastclick.js" />
+    <Content Include="Scripts\plugins\fastclick\fastclick.min.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-dj.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-er.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-et.js" />
@@ -1070,8 +1441,13 @@
     <Content Include="Scripts\jquery-ui-1.11.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.blockUI.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\plugins\jQueryUI\jquery-ui-1.10.3.js" />
+    <Content Include="Scripts\plugins\jQueryUI\jquery-ui-1.10.3.min.js" />
+    <Content Include="Scripts\plugins\jQuery\jQuery-2.1.3.min.js" />
     <Content Include="Scripts\json2.js" />
     <Content Include="Scripts\json2.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
@@ -1092,36 +1468,108 @@
     <Content Include="Scripts\sweetalert\sweet-alert.min.js" />
     <Content Include="Scripts\toastr.js" />
     <Content Include="Scripts\toastr.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Scripts\ApiUsage\OnlineTester.js" />
+    <Content Include="Scripts\ApiUsage\TypeDefAsync.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Scripts\jquery-2.1.1.min.map" />
     <Content Include="Views\_ViewStart.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\MsTrialsNavigationProvider.cs" />
     <Compile Include="App_Start\MsTrialsWebModule.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\Admin\AutorController.cs" />
+    <Compile Include="Controllers\Admin\MedicamentoController.cs" />
+    <Compile Include="Controllers\Admin\IndicacionController.cs" />
+    <Compile Include="Controllers\Admin\SponsorController.cs" />
+    <Compile Include="Controllers\Admin\ComparadorController.cs" />
+    <Compile Include="Controllers\Admin\EstudioController.cs" />
+    <Compile Include="Controllers\Api\ApiEstudioController.cs" />
+    <Compile Include="Controllers\CultureController.cs" />
+    <Compile Include="Controllers\ContactoController.cs" />
+    <Compile Include="Controllers\SearchController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\MsTrialsControllerBase.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\AspNetRole.cs">
+      <DependentUpon>MsTrials.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetUser.cs">
+      <DependentUpon>MsTrials.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetUserClaim.cs">
+      <DependentUpon>MsTrials.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetUserLogin.cs">
+      <DependentUpon>MsTrials.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Autor.cs">
+      <DependentUpon>MsTrials.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AutorEstudio.cs">
+      <DependentUpon>MsTrials.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Comparador.cs">
+      <DependentUpon>MsTrials.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\C__MigrationHistory.cs">
+      <DependentUpon>MsTrials.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Estudio.cs">
+      <DependentUpon>MsTrials.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EstudioAddEditModel.cs" />
+    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Indicacion.cs">
+      <DependentUpon>MsTrials.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Medicamento.cs">
+      <DependentUpon>MsTrials.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MsTrials.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MsTrials.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MsTrials.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MsTrials.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MsTrials.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MsTrials.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Sponsor.cs">
+      <DependentUpon>MsTrials.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SponsorEstudio.cs">
+      <DependentUpon>MsTrials.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\master.Master.cs">
-      <DependentUpon>master.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
+    <Compile Include="Resources\Resources.es.Designer.cs">
+      <DependentUpon>Resources.es.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="Views\master.Master.designer.cs">
-      <DependentUpon>master.Master</DependentUpon>
+    <Compile Include="Resources\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="Startup.cs" />
     <Compile Include="Views\MsTrialsWebViewPageBase.cs" />
-    <Compile Include="Views\Site1.Master.cs">
-      <DependentUpon>Site1.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Views\Site1.Master.designer.cs">
-      <DependentUpon>Site1.Master</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
@@ -1130,8 +1578,42 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Scripts\version.json" />
     <Content Include="Scripts\sweetalert\sweet-alert.scss" />
-    <Content Include="Views\master.Master" />
-    <Content Include="Views\Site1.Master" />
+    <Content Include="Views\Home\index_bkp.cshtml" />
+    <Content Include="Views\Shared\SiteLayout.cshtml" />
+    <Content Include="Views\Search\SearchEstudioPartial_bkp.cshtml" />
+    <Content Include="Views\Search\SearchResultsPartial.cshtml" />
+    <Content Include="Views\Admin\Estudio\AddEdit.cshtml" />
+    <Content Include="Views\Admin\Estudio\List.cshtml" />
+    <Content Include="Views\Shared\_Admin.cshtml" />
+    <Content Include="Views\Account\ConfirmEmail.cshtml" />
+    <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
+    <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
+    <Content Include="Views\Account\ForgotPassword.cshtml" />
+    <Content Include="Views\Account\ForgotPasswordConfirmation.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\LoginNew.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Account\ResetPassword.cshtml" />
+    <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
+    <Content Include="Views\Account\SendCode.cshtml" />
+    <Content Include="Views\Account\VerifyCode.cshtml" />
+    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\Admin\Autor\AddEdit.cshtml" />
+    <Content Include="Views\Admin\Autor\List.cshtml" />
+    <Content Include="Views\Admin\Medicamento\AddEdit.cshtml" />
+    <Content Include="Views\Admin\Medicamento\List.cshtml" />
+    <Content Include="Views\Admin\Comparador\AddEdit.cshtml" />
+    <Content Include="Views\Admin\Comparador\List.cshtml" />
+    <Content Include="Views\Admin\Sponsor\AddEdit.cshtml" />
+    <Content Include="Views\Admin\Sponsor\List.cshtml" />
+    <Content Include="Views\Admin\Indicacion\AddEdit.cshtml" />
+    <Content Include="Views\Admin\Indicacion\List.cshtml" />
+    <Content Include="Views\Autor\autores.cshtml" />
+    <Content Include="Views\Contacto\contacto.cshtml" />
+    <Content Include="Views\Search\SearchEstudioPartial.cshtml" />
+    <Content Include="Views\Home\index.cshtml" />
+    <Content Include="Views\Shared\SiteLayout_bkp.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -1140,7 +1622,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Models\" />
+    <Folder Include="Images\" />
+    <Folder Include="Views\ApiEstudio\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MsTrials.Application\MsTrials.Application.csproj">
@@ -1159,6 +1642,19 @@
       <Project>{5EB52D3D-09FD-463A-B02A-8D9856BD3724}</Project>
       <Name>MsTrials.WebApi</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Resources.es.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.es.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

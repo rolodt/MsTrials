@@ -18,10 +18,24 @@ namespace MsTrials.Web
                 );
 
             routes.MapRoute(
+                name: "Estudio",
+                url: "admin/{controller}/{action}/{id}",
+                defaults: new { controller = "Estudio", action = "Index", id = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+
+            routes.MapRoute(
+                name: "Search",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "Search", action = "Index", id = UrlParameter.Optional }
+            );
+
+            
         }
     }
 }

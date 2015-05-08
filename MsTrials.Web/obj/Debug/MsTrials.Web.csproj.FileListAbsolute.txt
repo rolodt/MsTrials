@@ -1,3 +1,80 @@
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\obj\Debug\MsTrials.Web.csprojResolveAssemblyReference.cache
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\obj\Debug\MsTrials.Web.dll
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\obj\Debug\MsTrials.Web.pdb
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\AutoMapper.Net4.dll
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\MsTrials.Web.dll.config
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\MsTrials.Web.dll
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\MsTrials.Web.pdb
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\Abp.AutoMapper.dll
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\Abp.dll
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\Abp.Web.Api.dll
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\Abp.Web.dll
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\Abp.Web.Mvc.dll
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\Antlr3.Runtime.dll
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\AutoMapper.dll
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\Castle.Core.dll
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\Castle.Facilities.Logging.dll
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\Castle.Services.Logging.Log4netIntegration.dll
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\Castle.Windsor.dll
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\EntityFramework.dll
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\EntityFramework.SqlServer.dll
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\log4net.dll
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\MsTrials.Application.dll
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\MsTrials.Core.dll
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\MsTrials.EntityFramework.dll
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\MsTrials.WebApi.dll
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\Newtonsoft.Json.dll
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\Nito.AsyncEx.Concurrent.dll
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\Nito.AsyncEx.dll
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\Nito.AsyncEx.Enlightenment.dll
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\System.Collections.Immutable.dll
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\System.Net.Http.Formatting.dll
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\System.Web.Helpers.dll
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\System.Web.Http.dll
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\System.Web.Http.WebHost.dll
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\System.Web.Mvc.dll
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\System.Web.Optimization.dll
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\System.Web.Razor.dll
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\System.Web.WebPages.dll
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\System.Web.WebPages.Razor.dll
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\WebGrease.dll
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\Abp.EntityFramework.dll
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\MsTrials.Application.pdb
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\MsTrials.Core.pdb
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\MsTrials.EntityFramework.pdb
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\MsTrials.WebApi.pdb
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\Abp.xml
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\Abp.AutoMapper.xml
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\Abp.Web.xml
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\Abp.Web.Api.xml
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\Abp.Web.Mvc.xml
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\Antlr3.Runtime.pdb
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\AutoMapper.pdb
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\AutoMapper.xml
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\AutoMapper.Net4.pdb
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\Castle.Core.xml
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\Castle.Facilities.Logging.xml
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\Castle.Windsor.xml
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\EntityFramework.xml
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\EntityFramework.SqlServer.xml
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\log4net.xml
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\Newtonsoft.Json.xml
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\Nito.AsyncEx.xml
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\Nito.AsyncEx.Concurrent.xml
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\Nito.AsyncEx.Enlightenment.xml
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\System.Collections.Immutable.xml
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\System.Net.Http.Formatting.xml
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\System.Web.Helpers.xml
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\System.Web.Http.xml
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\System.Web.Http.WebHost.xml
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\System.Web.Mvc.xml
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\System.Web.Optimization.xml
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\System.Web.Razor.xml
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\System.Web.WebPages.xml
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\System.Web.WebPages.Razor.xml
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.Web\bin\Abp.EntityFramework.xml
 C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bin\AutoMapper.Net4.dll
 C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bin\MsTrials.Web.dll.config
 C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bin\MsTrials.Web.dll
@@ -16,6 +93,14 @@ C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bi
 C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bin\EntityFramework.dll
 C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bin\EntityFramework.SqlServer.dll
 C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bin\log4net.dll
+C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bin\Microsoft.Owin.dll
+C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bin\Microsoft.Owin.Security.dll
+C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bin\Microsoft.Owin.Security.Google.dll
 C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bin\MsTrials.Application.dll
 C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bin\MsTrials.Core.dll
 C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bin\MsTrials.EntityFramework.dll
@@ -24,6 +109,7 @@ C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bi
 C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bin\Nito.AsyncEx.Concurrent.dll
 C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bin\Nito.AsyncEx.dll
 C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bin\Nito.AsyncEx.Enlightenment.dll
+C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bin\Owin.dll
 C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bin\System.Collections.Immutable.dll
 C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bin\System.Net.Http.Formatting.dll
 C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bin\System.Web.Helpers.dll
@@ -56,6 +142,14 @@ C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bi
 C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bin\EntityFramework.xml
 C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bin\EntityFramework.SqlServer.xml
 C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bin\log4net.xml
+C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bin\Microsoft.Owin.xml
+C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bin\Microsoft.Owin.Security.xml
+C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bin\Newtonsoft.Json.xml
 C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bin\Nito.AsyncEx.xml
 C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bin\Nito.AsyncEx.Concurrent.xml
@@ -75,3 +169,20 @@ C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bi
 C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\obj\Debug\MsTrials.Web.csprojResolveAssemblyReference.cache
 C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\obj\Debug\MsTrials.Web.dll
 C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\obj\Debug\MsTrials.Web.pdb
+C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\obj\Debug\MsTrials.Web.csproj.GenerateResource.Cache
+C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\obj\Debug\MsTrials.Web.Resources.Resources.resources
+C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\bin\es\MsTrials.Web.resources.dll
+C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\obj\Debug\MsTrials.Web.Resources.Resources.es.resources
+C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Web\obj\Debug\es\MsTrials.Web.resources.dll
