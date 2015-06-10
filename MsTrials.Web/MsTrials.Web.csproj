@@ -248,6 +248,8 @@
     <Content Include="Apps\MSTrials\www\img\favicon.ico" />
     <Content Include="Apps\MSTrials\www\contactForm.html" />
     <Content Include="Apps\MSTrials\www\img\line-horizontal.png" />
+    <Content Include="Apps\MSTrials\www\js\imgcache\imgcache.js" />
+    <Content Include="Apps\MSTrials\www\js\imgcache\qimgcache.js" />
     <Content Include="Apps\MSTrials\www\js\ranking.js" />
     <Content Include="Apps\MSTrials\www\ranking.html" />
     <Content Include="Apps\MSTrials\www\index.html" />
@@ -749,7 +751,6 @@
     <Content Include="Content\themes\base\tooltip.css" />
     <Content Include="Content\toastr.css" />
     <Content Include="Content\toastr.min.css" />
-    <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\fontroboto.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />

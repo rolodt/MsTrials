@@ -127,3 +127,46 @@ C:\Users\Rolo\Documents\MsTrials\MsTrials.WebApi\bin\Debug\System.Web.Http.WebHo
 C:\Users\Rolo\Documents\MsTrials\MsTrials.WebApi\obj\Debug\MsTrials.WebApi.csprojResolveAssemblyReference.cache
 C:\Users\Rolo\Documents\MsTrials\MsTrials.WebApi\obj\Debug\MsTrials.WebApi.dll
 C:\Users\Rolo\Documents\MsTrials\MsTrials.WebApi\obj\Debug\MsTrials.WebApi.pdb
+C:\Users\Rolo\Documents\MsTrials git\MsTrials.WebApi\bin\Debug\AutoMapper.Net4.dll
+C:\Users\Rolo\Documents\MsTrials git\MsTrials.WebApi\bin\Debug\MsTrials.WebApi.dll.config
+C:\Users\Rolo\Documents\MsTrials git\MsTrials.WebApi\bin\Debug\MsTrials.WebApi.dll
+C:\Users\Rolo\Documents\MsTrials git\MsTrials.WebApi\bin\Debug\MsTrials.WebApi.pdb
+C:\Users\Rolo\Documents\MsTrials git\MsTrials.WebApi\bin\Debug\Abp.AutoMapper.dll
+C:\Users\Rolo\Documents\MsTrials git\MsTrials.WebApi\bin\Debug\Abp.dll
+C:\Users\Rolo\Documents\MsTrials git\MsTrials.WebApi\bin\Debug\Abp.Web.Api.dll
+C:\Users\Rolo\Documents\MsTrials git\MsTrials.WebApi\bin\Debug\Abp.Web.dll
+C:\Users\Rolo\Documents\MsTrials git\MsTrials.WebApi\bin\Debug\AutoMapper.dll
+C:\Users\Rolo\Documents\MsTrials git\MsTrials.WebApi\bin\Debug\Castle.Core.dll
+C:\Users\Rolo\Documents\MsTrials git\MsTrials.WebApi\bin\Debug\Castle.Facilities.Logging.dll
+C:\Users\Rolo\Documents\MsTrials git\MsTrials.WebApi\bin\Debug\Castle.Windsor.dll
+C:\Users\Rolo\Documents\MsTrials git\MsTrials.WebApi\bin\Debug\MsTrials.Application.dll
+C:\Users\Rolo\Documents\MsTrials git\MsTrials.WebApi\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Rolo\Documents\MsTrials git\MsTrials.WebApi\bin\Debug\Nito.AsyncEx.Concurrent.dll
+C:\Users\Rolo\Documents\MsTrials git\MsTrials.WebApi\bin\Debug\Nito.AsyncEx.dll
+C:\Users\Rolo\Documents\MsTrials git\MsTrials.WebApi\bin\Debug\Nito.AsyncEx.Enlightenment.dll
+C:\Users\Rolo\Documents\MsTrials git\MsTrials.WebApi\bin\Debug\System.Collections.Immutable.dll
+C:\Users\Rolo\Documents\MsTrials git\MsTrials.WebApi\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Rolo\Documents\MsTrials git\MsTrials.WebApi\bin\Debug\System.Web.Http.dll
+C:\Users\Rolo\Documents\MsTrials git\MsTrials.WebApi\bin\Debug\System.Web.Http.WebHost.dll
+C:\Users\Rolo\Documents\MsTrials git\MsTrials.WebApi\bin\Debug\MsTrials.Application.pdb
+C:\Users\Rolo\Documents\MsTrials git\MsTrials.WebApi\bin\Debug\Abp.xml
+C:\Users\Rolo\Documents\MsTrials git\MsTrials.WebApi\bin\Debug\Abp.AutoMapper.xml
+C:\Users\Rolo\Documents\MsTrials git\MsTrials.WebApi\bin\Debug\Abp.Web.xml
+C:\Users\Rolo\Documents\MsTrials git\MsTrials.WebApi\bin\Debug\Abp.Web.Api.xml
+C:\Users\Rolo\Documents\MsTrials git\MsTrials.WebApi\bin\Debug\AutoMapper.pdb
+C:\Users\Rolo\Documents\MsTrials git\MsTrials.WebApi\bin\Debug\AutoMapper.xml
+C:\Users\Rolo\Documents\MsTrials git\MsTrials.WebApi\bin\Debug\AutoMapper.Net4.pdb
+C:\Users\Rolo\Documents\MsTrials git\MsTrials.WebApi\bin\Debug\Castle.Core.xml
+C:\Users\Rolo\Documents\MsTrials git\MsTrials.WebApi\bin\Debug\Castle.Facilities.Logging.xml
+C:\Users\Rolo\Documents\MsTrials git\MsTrials.WebApi\bin\Debug\Castle.Windsor.xml
+C:\Users\Rolo\Documents\MsTrials git\MsTrials.WebApi\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Rolo\Documents\MsTrials git\MsTrials.WebApi\bin\Debug\Nito.AsyncEx.xml
+C:\Users\Rolo\Documents\MsTrials git\MsTrials.WebApi\bin\Debug\Nito.AsyncEx.Concurrent.xml
+C:\Users\Rolo\Documents\MsTrials git\MsTrials.WebApi\bin\Debug\Nito.AsyncEx.Enlightenment.xml
+C:\Users\Rolo\Documents\MsTrials git\MsTrials.WebApi\bin\Debug\System.Collections.Immutable.xml
+C:\Users\Rolo\Documents\MsTrials git\MsTrials.WebApi\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Rolo\Documents\MsTrials git\MsTrials.WebApi\bin\Debug\System.Web.Http.xml
+C:\Users\Rolo\Documents\MsTrials git\MsTrials.WebApi\bin\Debug\System.Web.Http.WebHost.xml
+C:\Users\Rolo\Documents\MsTrials git\MsTrials.WebApi\obj\Debug\MsTrials.WebApi.csprojResolveAssemblyReference.cache
+C:\Users\Rolo\Documents\MsTrials git\MsTrials.WebApi\obj\Debug\MsTrials.WebApi.dll
+C:\Users\Rolo\Documents\MsTrials git\MsTrials.WebApi\obj\Debug\MsTrials.WebApi.pdb

@@ -1,8 +1,8 @@
-﻿var TypeDefAsync = new function ()   {
-    var me = this; 
+﻿var TypeDefAsync = new function () {
+    var me = this;
 
     var postSyncFunctions = [];
-    
+
     /************* Async Methods ****************/
 
     function saveJSONToLocalStorage(localStorageKey, response, accumulateResults, isPullDown) {
@@ -78,13 +78,11 @@
         }
     }
 
-    var apiRootUrl = "http://condor1683.startdedicated.com:81";
+    var apiRootUrl = "http://mstrials.com.ar";
 
     me.getApiRootUrl = function () {
         return apiRootUrl;
     }
-
-   
 
     me.getRecommendedEstudiosByFilter = function (searchParams, localStorageKey, externalSuccessCallback, externalFailCallback) {
         var data = {};
@@ -94,7 +92,7 @@
         data.sponsorId = searchParams.sponsorId;
         data.primerAutorId = searchParams.primerAutorId;
         data.maxRecords = searchParams.maxRecords;
-        
+
         var stringified = JSON.stringify(data);
         sendRequest("apiestudio/GetRecommendedByFilter", stringified, getGenericErrorHandler, { localStorageKey: localStorageKey }, getGenericSuccessHandler, externalSuccessCallback, externalFailCallback);
     }
@@ -218,7 +216,7 @@
             var parsedData = JSON.parse(jsonData);
             jsonData = JSON.stringify(parsedData);
         }
-        
+
         console.log(apiRootUrl + "/api/" + action);
 
         /*$.ajax({
@@ -242,7 +240,7 @@
             //jsonpCallback: "localJsonpCallback",
             success: function (data) {
                 console.log('success');
-               //alert('success');
+                //alert('success');
                 var validationResult = data;
 
                 if (successHandler != null) {
@@ -255,24 +253,24 @@
 
             },
             error: function (data, status) {
-               console.log("sendRequest: ERROR ");
-               //console.log(data.status);
-               //console.log(status + ' len ' + status.length);
-               extraParameters.filters = null;
-               
-               if (data.status == 0) {
+                console.log("sendRequest: ERROR ");
+                //console.log(data.status);
+                //console.log(status + ' len ' + status.length);
+                extraParameters.filters = null;
+
+                if (data.status == 0) {
                     if (errorHandler != null) {
                         extraParameters.ErrorMsg = "No network connectivity available to sync the object";
 
-                        if (status == 'timeout' && (extraParameters.localStorageKey == estudiosStorageKey || extraParameters.localStorageKey == rankingStorageKey))
-                            extraParameters.filters = JSON.parse(jsonData); 
+                        if ((status == 'timeout' || status == 'error') && (extraParameters.localStorageKey == estudiosStorageKey || extraParameters.localStorageKey == rankingStorageKey))
+                            extraParameters.filters = JSON.parse(jsonData);
 
                         errorHandler(extraParameters, externalSuccessCallback);
                     }
                 }
                 else if (data.status == 500) //server side exception
                 {
-                   
+
                 }
                 else {
                     if (errorHandler != null) {
