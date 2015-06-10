@@ -1,0 +1,51 @@
+﻿<div id="wrapper">
+    <h1 id="hAutores">Authores</h1>
+
+    <div class="loadingSpin" id="loadingSpinDiv"></div>
+    <div id="results"></div>
+
+    <div class="clear"></div>
+</div><!-- /wrapper -->
+
+<div class="testimonial">
+</div><!-- /testimonial -->
+
+<script type="text/javascript">
+    $('#aAutores').attr('id', 'current');
+
+    function loadFirstChildLevelResources(resources) {
+        document.title = 'MS Trials - ' + resources[langSelected]['authors'];
+        $('#hAutores').html(resources[langSelected]['authors']);
+    }
+
+    $(document).ready(function () {
+        $('#loadingSpinDiv').addClass('isLoading');
+        var target = $("#results");
+        target.empty();
+
+        TypeDefAsync.getAllAutores("autores",
+            function (result) {
+                $('#loadingSpinDiv').removeClass('isLoading');
+                var html = '';
+                if (result == undefined || result.length == 0) {
+                    html = '<h3 class="text-error">No items matched your search query!</h3>';
+                } else {
+
+                    for (var i = 0; i < result.length; i++) {
+                        var autor = result[i];
+                        html += '<div class="one_fourth">';
+                        html += '<h2>' + ((autor.Nombre == '') ? autor.Apellido : (autor.nombre.substring(0, 1) + ". " + autor.apellido)) + '</h2>';
+                        html += '<p class="meta"><a href="mailto:' + autor.email + '">' + autor.email + '</a></p>';
+                        html += '<p><img src="' + autor.imageUrl + '" alt="" style="max-height: 76px; max-width: 56px;">' + autor.reseña + '</p>';
+                        html += '</div>';
+                    }
+                }
+                target.append(html);
+            },
+            function (error) {
+                $('#loadingSpinDiv').removeClass('isLoading');
+                target.append('<h3 class="text-error">' + error.errorMsg + '</h3>');
+            }
+       );
+   });
+</script>

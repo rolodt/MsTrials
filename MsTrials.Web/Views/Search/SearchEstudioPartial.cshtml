@@ -1,0 +1,145 @@
+﻿<div class="search-inner">
+    <h3><span id="sSearchTitle">Búsqueda de Trials</span></h3>
+
+    <div id="form-availability">
+        <div class="one_half">
+            <label id="lMedicamento">Medicamento</label>
+            <select id="medicamento">
+            </select>
+        </div>
+
+        <div class="one_half last">
+            <label id="lIndicacion">Indicación</label>
+            <select id="indicacion">
+            </select>
+        </div>
+        <div class="clear"></div>
+
+        <div class="one_half">
+            <label>Sponsor</label>
+            <select id="sponsor">
+            </select>
+        </div>
+
+        <div class="one_half last">
+            <label id="lComparador">Comparador</label>
+            <select id="comparador"></select>
+        </div>
+        <div class="clear"></div>
+
+        <div class="ui-widget">
+            <label id="lprimerAutor">Primer autor</label>
+            <input type="text" name="primerAutor" id="primerAutor" />
+        </div>
+        <input type="hidden" name="selectedAutorId" id="selectedAutorId" value="0" />
+        <div class="clear"></div>
+
+        <button type="submit" name="submit" id="submit">Buscar</button>
+    </div>
+</div><!-- /search-inner -->
+
+<script type="text/javascript">
+
+    $(function () {
+        $.ajax({
+            url: window.location.origin + '/api/apisearch/GetArrayOfAutoresNames',
+            data: { input: "" },
+            type: "GET",
+            dataType: "jsonp",
+            success: function (response) {
+                $("#primerAutor").autocomplete({
+                    minLength: 3,
+                    source: response,
+                    messages: {
+                        noResults: '',
+                        results: function () { }
+                    },
+                    select: function (event, ui) {
+                        $('#selectedAutorId').val(ui.item.data);
+                    }
+                });
+            }
+        });
+    });
+
+    function loadSecondChildLevelResources(resources) {
+            $('#sSearchTitle').html(resources[langSelected]['searchTitle']);
+            $('#lMedicamento').html(resources[langSelected]['medicament']);
+            $('#lIndicacion').html(resources[langSelected]['indication']);
+            $('#lprimerAutor').html(resources[langSelected]['firstAuthor']);
+            $('#lComparador').html(resources[langSelected]['comparator']);
+            $('#submit').html(resources[langSelected]['searchButton']);
+        }
+
+        $(document).ready(function () {
+            LoadMedicamentos();
+            LoadComparadores();
+            LoadIndicaciones();
+            LoadSponsors();
+            //LoadAutores();
+            $('#primerAutor').change(function () {
+                if ($('#primerAutor').val() == '')
+                    $('#selectedAutorId').val(0);
+            });
+        });
+
+        function LoadMedicamentos() {
+            TypeDefAsync.getMedicamentos(
+                "medicamentos",
+                function (result) {
+                    var target = $('#medicamento');
+                    AppendHTMLItemsToSelectTarget(result, target);
+                }
+            );
+        }
+
+        function LoadComparadores() {
+            TypeDefAsync.getComparadores(
+                "comparadores",
+                function (result) {
+                    var target = $('#comparador');
+                    AppendHTMLItemsToSelectTarget(result, target);
+                }
+            );
+        }
+
+        function LoadIndicaciones() {
+            TypeDefAsync.getIndicaciones(
+                "indicaciones",
+                function (result) {
+                    var target = $('#indicacion');
+                    AppendHTMLItemsToSelectTarget(result, target);
+                }
+            );
+        }
+
+        function LoadSponsors() {
+            TypeDefAsync.getSponsors(
+                "sponsors",
+                function (result) {
+                    var target = $('#sponsor');
+                    AppendHTMLItemsToSelectTarget(result, target);
+                }
+            );
+        }
+
+        function LoadAutores() {
+            TypeDefAsync.getAutoresForDropDown(
+                "autoresForDropDown",
+                function (result) {
+                    var target = $('#primerAutor');
+                    AppendHTMLItemsToSelectTarget(result, target);
+                }
+            );
+        }
+
+        function AppendHTMLItemsToSelectTarget(items, target) {
+            console.log(items);
+            var resources = localStorage.getItem(resourcesStorageKey) != null ? JSON.parse(localStorage.getItem(resourcesStorageKey)) : null;       
+            target.append($("<option selected></option>").attr("value", "0").text(resources[langSelected] != null ? resources[langSelected]['choose'] : "Seleccionar..."));
+            for (var i = 0; i < items.length; i++) {
+                var item = items[i];
+                target.append($("<option></option>").attr("value", item.Value).text(item.Text));
+            }
+        }
+</script>

@@ -1,0 +1,129 @@
+﻿<div id="wrapper">
+    <div class="two_thirds">
+        <h1>Resultados</h1>
+
+        <ul class="listing-nav">
+            <li id="liViewMode">Modo de Vista: </li>
+            <li><a href="#" class="listing-grid">Default View</a></li>
+            <li><a href="#" class="listing-full">Compare</a></li>
+        </ul>
+
+        <div class="loadingSpin" id="loadingSpinDiv"></div>
+        <div id="search-results">
+        </div>
+
+        <ul class="pages" id="ulPages"></ul>
+    </div>
+
+    <!-- search widget -->
+    <div class="one_third last">
+        <div class="search">
+            @Html.Action("Index", "Search")
+        </div><!-- /search -->
+    </div>
+
+    <div id="search-results">
+    </div>
+</div><!-- /wrapper -->
+
+<script type="text/javascript">
+
+    var recordsPerPage = 6;
+    var lastMedicamentoId = 0;
+    var lastComparadorId = 0;
+    var lastIndicacionId = 0;
+    var lastSponsorId = 0;
+    var lastPrimerAutorId = 0;
+
+    $('#aEstudios').attr('id', 'current');
+
+    function loadFirstChildLevelResources(resources) {
+        document.title = 'MS Trials - ' + resources[langSelected]['studies'];
+        $('#liViewMode').html(resources[langSelected]['viewMode']);
+        if ($('#liPaginas').length > 0) {
+            $('#liPaginas').html(resources[langSelected]['pages']);
+        }
+        loadSecondChildLevelResources(resources);
+    }
+
+    $(document).ready(function () {
+        $("#submit").click(function () {
+            lastMedicamentoId = $('#medicamento').val();
+            lastComparadorId = $('#comparador').val();
+            lastIndicacionId = $('#indicacion').val();
+            lastSponsorId = $('#sponsor').val();
+            lastPrimerAutorId = $('#selectedAutorId').val();
+            executeGetEstudiosByFilter(1);
+        });
+
+        executeGetEstudiosByFilter(1);
+    });
+
+    function executeGetEstudiosByFilter(pageNumber) {
+
+        var target = $("#search-results");
+        target.empty();
+        $('#loadingSpinDiv').addClass('isLoading');
+
+        TypeDefAsync.getEstudiosByFilter(
+                { medicamentoId: lastMedicamentoId, comparadorId: lastComparadorId, indicacionId: lastIndicacionId, sponsorId: lastSponsorId, primerAutorId: lastPrimerAutorId, maxRecords: recordsPerPage, pageNumber: pageNumber },
+                "estudios",
+                function (result) {
+                    $('#loadingSpinDiv').removeClass('isLoading');
+
+                    var html = '';
+                    if (result == undefined || result.length == 0) {
+                        html = '<h3 class="text-error">' + (localStorage.getItem(resourcesStorageKey) != null ? JSON.parse(localStorage.getItem(resourcesStorageKey))[$('#lang').val()]['emptyRecords'] : '') + '</h3>';
+                    } else {
+                        html = '<ul class="listing">';
+                        var className = 'one_half';
+                        var last = ' last';
+                        for (var i = 0; i < result.estudios.length; i++) {
+                            var estudio = result.estudios[i];
+                            var myUrl = '@Url.Action("edit","estudio")/' + estudio.nombre;
+                            html += '<li class="' + className + '">';
+                            html += '<a href="' + myUrl + '">';
+                            html += '<img src="' + estudio.imageUrl + '" alt="" style="max-height: 93px; max-width: 272px;">';
+                            html += '<h3><span>' + estudio.titulo + '</span></h3>';
+                            html += '<span class="price">';
+                            for (x = 0; x < estudio.primerAutor.length; x++) {
+                                html += '<span class="char' + (x + 1) + '">' + estudio.primerAutor.charAt(x) + '</span>';
+                            }
+                            html += '</span>';
+                            html += '<ul class="listing-info">';
+                            html += '<li>Año ' + estudio.anio + '</li>';
+                            html += '<li>Rev. ' + estudio.revision + '</li>';
+                            html += '<li>Vol. ' + estudio.volumen + '</li>';
+                            html += '</ul>';
+                            html += '</a>';
+                            html += '</li>';
+
+                            if(className.indexOf(last) > -1)
+                                className = className.replace(last, '');
+                            else
+                                className += last;
+                        }
+                        html += '</ul>';
+
+                        var numberOfPages = Math.ceil(result.totalRecords / recordsPerPage);
+                        var i = 1;
+                        var htmlPages = '<li id="liPaginas">' + (localStorage.getItem(resourcesStorageKey) != null ? JSON.parse(localStorage.getItem(resourcesStorageKey))[$('#lang').val()]['pages'] : 'Páginas:') + '</li>';
+                        while (i <= numberOfPages) {
+                            if (i == pageNumber)
+                                htmlPages += '<li>' + i + '</li>';
+                            else
+                                htmlPages += '<li><a href="javascript:void(0)" onclick="executeGetEstudiosByFilter(' + i + ')">' + i + '</a></li>';
+                            i++;
+                        }
+                        $('#ulPages').empty();
+                        $('#ulPages').append(htmlPages);
+                    }
+                    target.append(html);
+                },
+                function (error) {
+                    $('#loadingSpinDiv').removeClass('isLoading');
+                    target.append('<h3 class="text-error">' + error.errorMsg + '</h3>');
+                }
+        );
+    }
+</script>

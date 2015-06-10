@@ -1,0 +1,120 @@
+﻿<div id="wrapper">
+    <div id="slider">
+        <ul class="rslides">
+            <li>
+                <img src="~/Resources/img/slider-1.jpg" alt="">
+
+                <div class="rslides-content">
+                    <h2>MS Trials</h2>
+
+                    <p id="pGetAppText"></p>
+                </div>
+            </li>
+
+            <!--<li>
+                <img src="~/Resources/img/slider-2.jpg" alt="">
+
+                <div class="rslides-content">
+                    <h2>MS Trials 2</h2>
+
+                    <p>Aca va texto descriptivo en relación a las novedades y noticias, ejemplo: Estudios y Trials.</a></p>
+                </div>
+            </li>
+
+            <li>
+                <img src="~/Resources/img/slider-3.jpg" alt="">
+
+                <div class="rslides-content">
+                    <h2>MS Trials 3</h2>
+
+                    <p>Aca va texto descriptivo en relación a las novedades y noticias, ejemplo: Estudios y Trials.</a></p>
+                </div>
+            </li>-->
+        </ul>
+    </div><!-- /slider -->
+    <!-- search widget -->
+    <div class="search">
+        @Html.Action("Index", "Search") 
+    </div><!-- /search -->
+
+    <h2 class="highlight"><span id="sEstudiosRecomendados">Estudios recomendados</span></h2>
+
+    <div class="loadingSpin" id="loadingSpinDiv"></div>
+    <div id="search-results"></div>
+
+</div><!-- /wrapper -->
+
+<div class="testimonial">
+    <blockquote><p id="pDownloadApp">Descargate nuestra App y busca todas las reseñas en tu celular</p></blockquote>
+</div><!-- /testimonial -->
+
+<script type="text/javascript">
+    function loadFirstChildLevelResources(resources) {
+        document.title = 'MS Trials - ' + resources[langSelected]['home'];
+        $('#sEstudiosRecomendados').html(resources[langSelected]['recommendedStudies']);
+        $('#pDownloadApp').html(resources[langSelected]['downloadAppText']);
+        $('#pGetAppText').html(resources[langSelected]['downloadAppText']);
+        loadSecondChildLevelResources(resources);
+    }
+
+    $('#aHome').attr('id', 'current');
+
+    $(document).ready(function () {   
+        $("#submit").click(function () {
+            executeGetEstudiosByFilter();
+        });
+        executeGetEstudiosByFilter();
+
+        $("body").attr('id', "home");
+    });
+
+   
+    function executeGetEstudiosByFilter() {
+
+        var target = $("#search-results");
+        target.empty();
+        $('#loadingSpinDiv').addClass('isLoading');
+
+        TypeDefAsync.getRecommendedEstudiosByFilter(
+                { medicamentoId: $('#medicamento').val(), comparadorId: $('#comparador').val(), indicacionId: $('#indicacion').val(), sponsorId: $('#sponsor').val(), primerAutorId: $('#selectedAutorId').val(), maxRecords: 6 },
+                "estudiosSugeridos",
+                function (result) {
+                    $('#loadingSpinDiv').removeClass('isLoading');
+
+                    var html = '';
+                    if (result == undefined || result.length == 0) {
+                        html = '<h3 class="text-error">No items matched your search query!</h3>';
+                    } else {
+                        html = '<ul class="listing">';
+                        for (var i = 0; i < result.length; i++) {
+                            
+                            var estudio = result[i];
+                            var myUrl = '@Url.Action("edit","estudio")/' + estudio.nombre;
+                            html += '<li class="one_third">';
+                            html += '<a href="' + myUrl + '">';
+                            html += '<img src="' + estudio.imageUrl + '" alt="" style="max-height: 93px; max-width: 272px;">'; //set height="100%" width="272" or min-height/width if you want to set a fixed size.
+                            html += '<h3><span>' + estudio.titulo + '</span></h3>';
+                            html += '<span class="price">';
+                            for (x = 0; x < estudio.primerAutor.length; x++) { 
+                                html += '<span class="char' + (x + 1) + '">' + estudio.primerAutor.charAt(x) + '</span>';
+                            }
+                            html += '</span>';
+                            html += '<ul class="listing-info">';
+                            html += '<li>Año ' + estudio.anio + '</li>';
+                            html += '<li>Rev. ' + estudio.revision + '</li>';
+                            html += '<li>Vol. ' + estudio.volumen + '</li>';
+                            html += '</ul>';
+                            html += '</a>';
+                            html += '</li>';
+                        }
+                        html += '</ul>';
+                    }
+                    target.append(html);
+                },
+                function (error) {
+                    $('#loadingSpinDiv').removeClass('isLoading');
+                    target.append('<h3 class="text-error">' + error.errorMsg + '</h3>');
+                }
+        );
+    }
+</script>

@@ -1,0 +1,52 @@
+﻿@using (Ajax.BeginForm("SearchEstudio", "Home", FormMethod.Post,
+        new AjaxOptions
+        {
+            InsertionMode = InsertionMode.Replace,
+            HttpMethod = "POST",
+            UpdateTargetId = "search-results"
+        }))
+{
+<div class="search-inner">
+    <h3><span>Búsqueda de Trials</span></h3>
+
+    <form action="browse.html" id="form-availability" method="post">
+        <div class="one_half">
+            <label>Medicamento</label>
+            <select name="medicamento">
+                <option value=""></option>
+            </select>
+        </div>
+
+        <div class="one_half last">
+            <label>Indicación</label>
+            <select name="indicacion">
+                <option value=""></option>
+            </select>
+        </div><div class="clear"></div>
+
+        <div class="one_half">
+            <label>Sponsor</label>
+            <select name="sponsor">
+                <option value=""></option>
+            </select>
+        </div>
+
+        <div class="one_half last">
+            <label>Primer autor</label>
+            <select name="autor">
+                <option value="ass">aaa</option>
+            </select>
+        </div><div class="clear"></div>
+
+        <div class="one_half">
+            <label>Comparador</label>
+            <select name="comprador">
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="clear"></div>
+
+        <button type="submit" name="submit">Buscar</button>
+    </form>
+</div><!-- /search-inner -->
+}

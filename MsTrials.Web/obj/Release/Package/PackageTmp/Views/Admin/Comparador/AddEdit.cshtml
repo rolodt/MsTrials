@@ -1,0 +1,35 @@
+﻿@using MsTrials.Web.Resources
+@model MsTrials.Web.Models.Comparador
+
+@{
+    ViewBag.Title = "";
+    Layout = "../../Shared/_Admin.cshtml";
+}
+
+<div class="addEditComparador">
+    <div class="col-md-8">
+        <!-- general form elements disabled -->
+        <div class="box box-warning">
+            <div class="box-header">
+                <h3 class="box-title">@(((Model != null) ? @Resources.Edit : @Resources.Add) + " " + @Resources.Comparator)</h3>
+            </div><!-- /.box-header -->
+            <div class="box-body">
+                @using (Html.BeginForm("AddEdit", "admin/comparador", FormMethod.Post))
+                {
+                    if (Model != null)
+                    {
+                        <input id="comparadorId" name="comparadorId" type="hidden" value="@Model.ComparadorId" />
+                    }
+                    <div class="form-group">
+                        <label>@Resources.Description</label>
+                        <input data-val="true" data-val-required="@Resources.RequiredField" id="descripcion" name="descripcion" type="text" class="form-control" value="@(Model != null ? Model.Descripcion.ToString() : "")" />
+                        <span class="field-validation-valid" data-valmsg-for="descripcion" data-valmsg-replace="true"></span>
+                    </div>
+                    <div class="box-footer">
+                        <button type="submit" class="btn btn-primary">@Resources.Save</button>
+                    </div>
+                }
+            </div><!-- /.box-body -->
+        </div><!-- /.box -->
+    </div>
+</div>

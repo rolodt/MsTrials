@@ -78,8 +78,8 @@ namespace MsTrials.Web
 
 
 
-            bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js"));
+            /*bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
+                        "~/Scripts/jquery-{version}.js"));*/
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
@@ -101,7 +101,6 @@ namespace MsTrials.Web
 
 
             bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/css/flexslider.css", "~/Content/css/nvts.css", "~/Content/css/shCore.css", "~/Content/css/shThemeDefault.css"));
-
 
         }
     }

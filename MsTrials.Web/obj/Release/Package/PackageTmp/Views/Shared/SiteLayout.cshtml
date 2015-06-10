@@ -1,0 +1,236 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Your description goes here..." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title></title>
+
+    <link rel="shortcut icon" href="~/Resources/img/favicon.ico" />
+    <link rel="stylesheet" href="~/Resources/css/style.css" />
+    <link rel="stylesheet" href="~/Resources/css/custom.css" />
+    <link rel="stylesheet" href="~/Resources/css/new.css" />
+    <link rel="stylesheet" href="~/fonts/fontroboto.css">
+    <link rel="stylesheet" href="~/Content/font-awesome.min.css">
+
+    <script src="~/Resources/js/respond.min.js"></script>
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link href="~/Content/css/ValidationHelpers.css" rel="stylesheet" type="text/css" />
+
+    <!-- jQuery 2.1.3 -->
+    <script src="~/Scripts/plugins/jQuery/jQuery-2.1.3.min.js"></script>
+    <script src="~/Scripts/plugins/jQueryUI/jquery-ui-1.10.3.min.js"></script>
+    
+
+    <script src="~/Scripts/ApiUsage/TypeDefAsync.js"></script>
+    <script src="~/Scripts/ApiUsage/OnlineTester.js"></script>
+
+    <script type="text/javascript">
+    var resourcesStorageKey = "resources";
+    var languageSelectedKey = "languageSelected";
+    var langSelected = '';
+
+    $(document).ready(function () {
+
+        langSelected = localStorage.getItem(languageSelectedKey);
+        langSelected = langSelected != null ? langSelected : 'es-ES';
+        $('#lang').val(langSelected);
+
+        //we load the resources here using local storage but below we go and get the latest resources from the server.
+        loadRootLevelResources(JSON.parse(localStorage.getItem(resourcesStorageKey)));
+
+        executeGetCultureResources();
+
+        $("#lang").change(function () {
+            localStorage.setItem(languageSelectedKey, $('#lang').val());
+            langSelected = $('#lang').val();
+            loadRootLevelResources(JSON.parse(localStorage.getItem(resourcesStorageKey)));
+        });
+
+        if (localStorage.getItem('offlineMode') == 1)
+            showAppOffline();
+
+        setInterval(function () {
+            OnlineTester.checkInternetConnectivity(
+                function () {
+                    $('#offlineText').html('The app is online again');
+                    setTimeout($('#informAppOffline').fadeOut('slow'), 10000);
+                },
+                function () {
+                    showAppOffline();
+                }
+            )
+        }, 10000);
+
+        $('#newsletter_submit').click(function () {
+            var email = $('#newsletter_email');
+            var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+            var target = $("#newsletter_results");
+            target.empty();
+            if (email.val() == '' || !pattern.test(email.val())) {
+                target.append((localStorage.getItem(resourcesStorageKey) != null ? JSON.parse(localStorage.getItem(resourcesStorageKey))[$('#lang').val()]['wrongAddress'] : 'Por favor ingrese una dirección válida.'));
+                return false;
+            }
+            $('#loadingSpinDiv_newsletter').addClass('isLoading');
+            TypeDefAsync.subscribeToNewsletter({ email: $('#newsletter_email').val() },
+                function (result) {
+                    $('#loadingSpinDiv_newsletter').removeClass('isLoading');
+                    target.append((localStorage.getItem(resourcesStorageKey) != null ? JSON.parse(localStorage.getItem(resourcesStorageKey))[$('#lang').val()]['subscribed'] : 'Te has subscripto!'));
+                },
+                function (error) {
+                    $('#loadingSpinDiv_newsletter').removeClass('isLoading');
+                    target.append(error.errorMsg);
+                }
+            )
+        }
+    );
+    });
+
+    function showAppOffline() {
+        $('#offlineText').html('The app is offline');
+        $('#informAppOffline').fadeIn('slow');
+    }
+
+    function executeGetCultureResources() {
+        TypeDefAsync.getCultureResources(resourcesStorageKey,
+            function (resources) {
+                //by this moment the genericHandler (inside TypeDefAsyns) has already saves the resources into local storage.
+                loadRootLevelResources(resources);
+            },
+            function () {
+                //externalFailCallback is called only when the request returns an error (in case of error both success and fail callbacks are executed)
+                //If there is no connectivity, this callback isn't reached. In that case, the executeSuccessCallback will be called but with what is stored in local storage (because the request is not invoked).
+                setTimeout(executeGetCultureResources(), 1000);
+            }
+        );
+    }
+
+    function loadRootLevelResources(resources) {
+
+        if (resources != null) {
+            $('#sEstudios').html(resources[langSelected]['studies']);
+            $('#sAutores').html(resources[langSelected]['authors']);
+            $('#sContacto').html(resources[langSelected]['contact']);
+            $('#sHome').html(resources[langSelected]['home']);
+            $('#aEstudiosFooter').html(resources[langSelected]['studies']);
+            $('#aAutoresFooter').html(resources[langSelected]['authors']);
+            $('#aContactoFooter').html(resources[langSelected]['contact']);
+            $('#aHomeFooter').html(resources[langSelected]['home']);
+            $('#hContacto').html(resources[langSelected]['contact']);
+            $('#pSubscribe').html(resources[langSelected]['newsletterText']);
+            $('#hSeguinos').html(resources[langSelected]['followUs']);
+            loadFirstChildLevelResources(resources);
+        }
+    }
+</script>
+
+</head>
+<body>
+        
+        <!--<ajaxToolkit:ToolkitScriptManager ID="TSM" EnablePageMethods="true" runat="server" />-->
+        <header>
+            <div class="header-inner">
+                <a href="@Url.Action("Index", "home")"><img src="~/Resources/img/logo.png" alt="MS Trials" /></a>
+
+                <div id="nav">
+                    <ul>
+                        <li><a href="@Url.Action("Index", "home")" id="aHome"><span id="sHome">Home</span></a></li>
+                        <li><a href="@Url.Action("Index", "estudio")" id="aEstudios"><span id="sEstudios">Estudios</span></a></li>
+                        <li><a href="@Url.Action("Index", "ranking")" id="aRanking">Ranking</a></li>
+                        <li><a href="http://www.esclerosismultiple.org" id="aAutores"><span id="sAutores">Autores</span></a></li>
+                        <li><a href="@Url.Action("Index", "contacto")" id="aContacto"><span id="sContacto">Contacto</span></a></li>
+                        <li>
+                            <select id="lang" name="lang" style="margin-bottom:0px;width:100px;">
+                                <option value="en-US">English</option>
+                                <option value="es-ES">Español</option>
+                            </select>
+                        </li>
+
+                    </ul>
+                </div>
+            </div><!-- /header-inner -->
+            <div id="informAppOffline" class="offline" style="display: none;">
+                <h3><span id="offlineText"></span></h3>
+            </div>
+        </header>
+
+        <div id="content">
+            @RenderBody()
+        </div>
+
+        <div class="footer">
+            <div class="footer-inner">
+                <div class="one_fourth">
+                    <p><img src="~/Resources/img/logo-footer.png" alt="" class="center" /></p>
+                </div>
+
+                <div class="one_fourth">
+                    <h3 id="hContacto">Contacto</h3>
+
+                    <p>
+                        <img src="~/Resources/img/logo_cem_footer.png" alt="" class="cem" />
+                        <b>Tel: 4711-3997/8</b><br />
+                        <a href="mailto:soporte@microhelp.com.ar">info@soporte.com.ar</a><br />
+                        <a href="http://www.mstrials.com">www.mstrials.com</a>
+                    </p>
+                </div>
+
+                <div class="one_fourth">
+                    <h3>Newsletter</h3>
+
+                    <p id="pSubscribe">Suscribite a nuestra aplicación y enterate de los últimos estudios.</p>
+
+                    <!-- newsletter -->
+                    <div id="form-newsletter">
+                        <input type="text" placeholder="E-mail" id="newsletter_email" class="email" size="28" />
+
+                        <input type="hidden" name="form" value="newsletter" />
+                        <button id="newsletter_submit">&#8594;</button>
+                    </div>
+                    <div class="loadingSpin" id="loadingSpinDiv_newsletter"style="height:30px;"></div>
+                    <div id="newsletter_results"></div>
+                </div>
+
+                <div class="one_fourth last">
+                    <h3 id="hSeguinos">Seguinos</h3>
+
+                    <ul>
+                        <!--<li><a href="#" id="facebook">Facebook</a></li>-->
+                        <li><a href="@Html.Raw("https://twitter.com/@cembaorg")"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="@Html.Raw("https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fprofile%2Fview%3Fid%3D129055479%26trk%3Dhb_tab_pro_top")"><i class="fa fa-linkedin"></i></a></li>
+                        <!--<li><a href="#" id="google">Google Plus</a></li>-->
+                        <!--<li><a href="#" id="youtube">YouTube</a></li>-->
+                    </ul>
+                </div><div class="clear"></div>
+            </div><!-- /footer-inner -->
+        </div><!-- /footer -->
+
+        <footer>
+            <ul>
+                <li><a href="@Url.Action("Index", "home")" id="aHomeFooter">Home</a></li>
+                <li><a href="@Url.Action("Index", "estudio")" id="aEstudiosFooter">Estudios</a></li>
+                <li><a href="@Url.Action("Index", "ranking")">Ranking</a></li>
+                <li><a href="http://www.esclerosismultiple.org" id="aAutoresFooter">Autores</a></li>
+                <li><a href="@Url.Action("Index", "contacto")" id="aContactoFooter">Contacto</a></li>
+            </ul>
+
+            <p>Copyright &copy; 2015 MS Trials.</p>
+        </footer>
+
+        <!-- JavaScript -->
+        <script src="~/Resources/js/scripts.js"></script>
+
+        <!--Scripts.Render("~/bundles/jquery")-->
+        @Scripts.Render("~/bundles/jqueryval")
+
+        <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+
+        @Scripts.Render("~/bundles/scripts")
+
+        @RenderSection("scripts", required: false)
+</body>
+</html>

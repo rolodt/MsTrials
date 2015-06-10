@@ -1,0 +1,36 @@
+#studyPic {
+	float: left;
+	padding-right: 10px;
+	padding-bottom: 16px;
+}
+
+#studyDetails p {
+	margin-top: 0px;
+	margin-bottom: 8px;
+}
+
+#actionList {
+	clear: both;
+}
+
+[data-role=page]{height: 100% !important; position:relative !important;}
+[data-role=footer]{bottom:0; position:absolute !important; top: auto !important; width:100%;}
+
+.ui-selectmenu.ui-popup .ui-input-search {
+    margin-left: .5em;
+    margin-right: .5em;
+}
+.ui-selectmenu.ui-dialog .ui-content {
+    padding-top: 0;
+}
+.ui-selectmenu.ui-dialog .ui-selectmenu-list {
+    margin-top: 0;
+}
+.ui-selectmenu.ui-popup .ui-selectmenu-list li.ui-first-child .ui-btn {
+    border-top-width: 1px;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+.ui-selectmenu.ui-dialog .ui-header {
+    border-bottom-width: 1px;
+}

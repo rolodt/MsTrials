@@ -2,6 +2,9 @@
 using Abp.Dependency;
 using Abp.Web;
 using Castle.Facilities.Logging;
+using System.Web.Http;
+using WebApiContrib.Formatting.Jsonp;
+using System.Net.Http.Formatting;
 
 namespace MsTrials.Web
 {

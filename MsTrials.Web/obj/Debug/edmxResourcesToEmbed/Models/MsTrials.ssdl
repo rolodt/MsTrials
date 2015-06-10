@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MsTrialsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2005" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="__MigrationHistory">
+    <Key>
+      <PropertyRef Name="MigrationId" />
+      <PropertyRef Name="ContextKey" />
+    </Key>
+    <Property Name="MigrationId" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="ContextKey" Type="nvarchar" MaxLength="300" Nullable="false" />
+    <Property Name="Model" Type="varbinary(max)" Nullable="false" />
+    <Property Name="ProductVersion" Type="nvarchar" MaxLength="32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AspNetRoles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="256" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AspNetUserClaims">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="ClaimType" Type="nvarchar(max)" />
+    <Property Name="ClaimValue" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="AspNetUserLogins">
+    <Key>
+      <PropertyRef Name="LoginProvider" />
+      <PropertyRef Name="ProviderKey" />
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="LoginProvider" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="ProviderKey" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AspNetUserRoles">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="RoleId" Type="nvarchar" MaxLength="128" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AspNetUsers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="256" />
+    <Property Name="EmailConfirmed" Type="bit" Nullable="false" />
+    <Property Name="PasswordHash" Type="nvarchar(max)" />
+    <Property Name="SecurityStamp" Type="nvarchar(max)" />
+    <Property Name="PhoneNumber" Type="nvarchar(max)" />
+    <Property Name="PhoneNumberConfirmed" Type="bit" Nullable="false" />
+    <Property Name="TwoFactorEnabled" Type="bit" Nullable="false" />
+    <Property Name="LockoutEndDateUtc" Type="datetime" />
+    <Property Name="LockoutEnabled" Type="bit" Nullable="false" />
+    <Property Name="AccessFailedCount" Type="int" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="256" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Autor">
+    <Key>
+      <PropertyRef Name="AutorId" />
+    </Key>
+    <Property Name="AutorId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar" MaxLength="256" />
+    <Property Name="Email" Type="nvarchar" MaxLength="256" />
+    <Property Name="Reseña" Type="nvarchar(max)" />
+    <Property Name="ImageURL" Type="nvarchar" MaxLength="256" />
+    <Property Name="Apellido" Type="nvarchar" MaxLength="256" />
+  </EntityType>
+  <EntityType Name="AutorEstudio">
+    <Key>
+      <PropertyRef Name="AutorEstudioId" />
+    </Key>
+    <Property Name="AutorEstudioId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EstudioId" Type="int" Nullable="false" />
+    <Property Name="AutorId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Comparador">
+    <Key>
+      <PropertyRef Name="ComparadorId" />
+    </Key>
+    <Property Name="ComparadorId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descripcion" Type="nvarchar" MaxLength="256" />
+  </EntityType>
+  <EntityType Name="Estudio">
+    <Key>
+      <PropertyRef Name="EstudioId" />
+    </Key>
+    <Property Name="EstudioId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Titulo" Type="nvarchar" MaxLength="256" Nullable="false" />
+    <Property Name="Año" Type="smallint" />
+    <Property Name="Revision" Type="nvarchar" MaxLength="64" />
+    <Property Name="Volumen" Type="nvarchar" MaxLength="64" />
+    <Property Name="Objetivos" Type="nvarchar(max)" />
+    <Property Name="Metodo" Type="nvarchar(max)" />
+    <Property Name="Resultados" Type="nvarchar(max)" />
+    <Property Name="Conclusion" Type="nvarchar(max)" />
+    <Property Name="NombreComercial" Type="nvarchar" MaxLength="256" />
+    <Property Name="MedicamentoId" Type="int" />
+    <Property Name="IndicacionId" Type="int" />
+    <Property Name="ComparadorId" Type="int" />
+    <Property Name="CantidadVisitas" Type="bigint" />
+    <Property Name="FechaCreacion" Type="datetime" />
+    <Property Name="Nombre" Type="nvarchar" MaxLength="256" />
+    <Property Name="Link" Type="nvarchar" MaxLength="512" />
+    <Property Name="PrimerAutorId" Type="int" Nullable="false" />
+    <Property Name="SponsorId" Type="int" />
+    <Property Name="ImageURL" Type="nvarchar" MaxLength="256" />
+    <Property Name="Active" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Indicacion">
+    <Key>
+      <PropertyRef Name="IndicacionId" />
+    </Key>
+    <Property Name="IndicacionId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descripcion" Type="nvarchar" MaxLength="256" />
+  </EntityType>
+  <EntityType Name="Medicamento">
+    <Key>
+      <PropertyRef Name="MedicamentoId" />
+    </Key>
+    <Property Name="MedicamentoId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descripcion" Type="nvarchar" MaxLength="256" />
+  </EntityType>
+  <EntityType Name="Newsletter">
+    <Key>
+      <PropertyRef Name="NewsletterId" />
+    </Key>
+    <Property Name="NewsletterId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="256" />
+  </EntityType>
+  <EntityType Name="Sponsor">
+    <Key>
+      <PropertyRef Name="SponsorId" />
+    </Key>
+    <Property Name="SponsorId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar" MaxLength="256" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_AutoresEstudios_Autores">
+    <End Role="Autor" Type="Self.Autor" Multiplicity="1" />
+    <End Role="AutorEstudio" Type="Self.AutorEstudio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Autor">
+        <PropertyRef Name="AutorId" />
+      </Principal>
+      <Dependent Role="AutorEstudio">
+        <PropertyRef Name="AutorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AutoresEstudios_Estudios">
+    <End Role="Estudio" Type="Self.Estudio" Multiplicity="1" />
+    <End Role="AutorEstudio" Type="Self.AutorEstudio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Estudio">
+        <PropertyRef Name="EstudioId" />
+      </Principal>
+      <Dependent Role="AutorEstudio">
+        <PropertyRef Name="EstudioId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserClaims" Type="Self.AspNetUserClaims" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserClaims">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserLogins" Type="Self.AspNetUserLogins" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserLogins">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId">
+    <End Role="AspNetRoles" Type="Self.AspNetRoles" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserRoles" Type="Self.AspNetUserRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetRoles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserRoles">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserRoles" Type="Self.AspNetUserRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserRoles">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Estudio_Autores">
+    <End Role="Autor" Type="Self.Autor" Multiplicity="1" />
+    <End Role="Estudio" Type="Self.Estudio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Autor">
+        <PropertyRef Name="AutorId" />
+      </Principal>
+      <Dependent Role="Estudio">
+        <PropertyRef Name="PrimerAutorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Estudios_Comparadores">
+    <End Role="Comparador" Type="Self.Comparador" Multiplicity="0..1" />
+    <End Role="Estudio" Type="Self.Estudio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Comparador">
+        <PropertyRef Name="ComparadorId" />
+      </Principal>
+      <Dependent Role="Estudio">
+        <PropertyRef Name="ComparadorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Estudios_Indicaciones">
+    <End Role="Indicacion" Type="Self.Indicacion" Multiplicity="0..1" />
+    <End Role="Estudio" Type="Self.Estudio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Indicacion">
+        <PropertyRef Name="IndicacionId" />
+      </Principal>
+      <Dependent Role="Estudio">
+        <PropertyRef Name="IndicacionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Estudios_Medicamentos">
+    <End Role="Medicamento" Type="Self.Medicamento" Multiplicity="0..1" />
+    <End Role="Estudio" Type="Self.Estudio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Medicamento">
+        <PropertyRef Name="MedicamentoId" />
+      </Principal>
+      <Dependent Role="Estudio">
+        <PropertyRef Name="MedicamentoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Estudios_Sponsors">
+    <End Role="Sponsor" Type="Self.Sponsor" Multiplicity="0..1" />
+    <End Role="Estudio" Type="Self.Estudio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sponsor">
+        <PropertyRef Name="SponsorId" />
+      </Principal>
+      <Dependent Role="Estudio">
+        <PropertyRef Name="SponsorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="MsTrialsModelStoreContainer">
+    <EntitySet Name="__MigrationHistory" EntityType="Self.__MigrationHistory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetRoles" EntityType="Self.AspNetRoles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetUserClaims" EntityType="Self.AspNetUserClaims" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetUserLogins" EntityType="Self.AspNetUserLogins" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetUserRoles" EntityType="Self.AspNetUserRoles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetUsers" EntityType="Self.AspNetUsers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Autor" EntityType="Self.Autor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AutorEstudio" EntityType="Self.AutorEstudio" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Comparador" EntityType="Self.Comparador" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Estudio" EntityType="Self.Estudio" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Indicacion" EntityType="Self.Indicacion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Medicamento" EntityType="Self.Medicamento" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Newsletter" EntityType="Self.Newsletter" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sponsor" EntityType="Self.Sponsor" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_AutoresEstudios_Autores" Association="Self.FK_AutoresEstudios_Autores">
+      <End Role="Autor" EntitySet="Autor" />
+      <End Role="AutorEstudio" EntitySet="AutorEstudio" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AutoresEstudios_Estudios" Association="Self.FK_AutoresEstudios_Estudios">
+      <End Role="Estudio" EntitySet="Estudio" />
+      <End Role="AutorEstudio" EntitySet="AutorEstudio" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserClaims" EntitySet="AspNetUserClaims" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserLogins" EntitySet="AspNetUserLogins" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId" Association="Self.FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId">
+      <End Role="AspNetRoles" EntitySet="AspNetRoles" />
+      <End Role="AspNetUserRoles" EntitySet="AspNetUserRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserRoles" EntitySet="AspNetUserRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Estudio_Autores" Association="Self.FK_Estudio_Autores">
+      <End Role="Autor" EntitySet="Autor" />
+      <End Role="Estudio" EntitySet="Estudio" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Estudios_Comparadores" Association="Self.FK_Estudios_Comparadores">
+      <End Role="Comparador" EntitySet="Comparador" />
+      <End Role="Estudio" EntitySet="Estudio" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Estudios_Indicaciones" Association="Self.FK_Estudios_Indicaciones">
+      <End Role="Indicacion" EntitySet="Indicacion" />
+      <End Role="Estudio" EntitySet="Estudio" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Estudios_Medicamentos" Association="Self.FK_Estudios_Medicamentos">
+      <End Role="Medicamento" EntitySet="Medicamento" />
+      <End Role="Estudio" EntitySet="Estudio" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Estudios_Sponsors" Association="Self.FK_Estudios_Sponsors">
+      <End Role="Sponsor" EntitySet="Sponsor" />
+      <End Role="Estudio" EntitySet="Estudio" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

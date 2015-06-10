@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>MS Trials</title>
+</head>
+
+<body>
+
+<div id="detailsPage" data-role="page">
+
+    <div data-role="header" class="backgroundToolbarColor">
+        <a href="" onclick="preGoBackToMainPage();" id="backButton" data-icon="back" class="ui-btn-left">Back</a>
+        <h1 id="header" class="toolbarFontColor">Estudio</h1>
+    </div>
+    <div id="informAppOffline_Details" class="offline" style="display: none;">
+        <h3><span id="offlineText_Details"></span></h3>
+    </div>
+    <div data-role="content"> 
+  	    <img id="studyPic" style="max-width:50%; max-height:25%;"/>
+	    <div id="studyDetails">
+           <h3 id="name"></h3>
+           <p id="title"></p>
+           <br/>
+           <p id="importantData"></p>
+           <p id="moreInfo"></p>
+   	    </div>
+	 
+        <ul id="actionList" data-role="listview" data-inset="true"></ul>
+    </div>
+</div>
+</body>
+
+</html>

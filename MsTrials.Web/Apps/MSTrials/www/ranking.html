@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>MS Trials</title>
+
+</head>
+    
+<body>
+        
+<div id="rankingPage" data-role="page" >
+
+    <div data-role="header" data-position="fixed" class="backgroundToolbarColor">
+        <h1 id="hPageTitle" class="toolbarFontColor">Ranking</h1>
+        <a href="studyRefineSearch.html" onclick="globalMode = 'ranking'; setCalledFromIndex();" data-icon="search" class="ui-btn-right" id="aRefine2">Refine</a>
+    </div>
+    <div id="informAppOffline_Ranking" class="offline" style="display: none;">
+        <h3><span id="offlineText_Ranking"></span></h3>
+    </div>
+    <form class="ui-filterable">
+        <input id="filterBasic-input2" data-type="search" placeholder="" />
+    </form>
+    <div id="divNoItemsFound2" style="width:100%; text-align:center; display: none;"></div>
+    <div data-role="content" id="content_table">
+        <ul id="rankingList" data-role="listview" data-filter="true" data-input="#filterBasic-input2" class="has-odd-thumb"></ul>
+    </div>		
+
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li><a href="javascript:void(0)" onclick="gotoIndex(); return true;" data-icon="home" id="aStudies2">Studies</a></li>
+                <li><a href="javascript:void(0)" data-icon="star" class="ui-btn-active" id="aRanking2">Ranking</a></li>
+                <li><a href="contactForm.html" data-icon="mail" id="aContact2">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+</body>
+
+</html>

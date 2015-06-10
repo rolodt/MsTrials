@@ -1,0 +1,214 @@
+﻿@using MsTrials.Web.Resources
+@model MsTrials.Web.Models.EstudioAddEditModel
+
+@{
+    ViewBag.Title = "";
+    Layout = "../../Shared/_Admin.cshtml";
+}
+
+<div class="row">
+@using (Html.BeginForm("AddEdit", "admin/estudio", FormMethod.Post, new { encType = "multipart/form-data" }))
+{
+    <div class="box-header">
+        <h3 class="box-title">@(((Model.estudio != null) ? @Resources.Edit : @Resources.Add) + " " + @Resources.Study)</h3>
+    </div><!-- /.box-header -->
+    <div class="col-md-6">
+        <!-- general form elements disabled -->
+        <div class="box box-warning">
+            <div class="box-body">
+                @if (Model.estudio != null)
+                {
+                    <input id="estudioId" name="estudioId" type="hidden" value="@Model.estudio.EstudioId" />
+                }
+                <div class="form-group">
+                    <label>@Resources.Title</label>
+                    <input data-val="true" data-val-required="@Resources.RequiredField" id="titulo" name="titulo" type="text" class="form-control" value="@(Model.estudio != null ? Model.estudio.Titulo : "")" />
+                    <span class="field-validation-valid" data-valmsg-for="titulo" data-valmsg-replace="true"></span>
+                </div>
+                <div class="form-group">
+                    <label>@Resources.Name</label>
+                    <input data-val="true" data-val-required="@Resources.RequiredField" id="nombre" name="nombre" type="text" class="form-control" value="@(Model.estudio != null ? Model.estudio.Nombre : "")" />
+                    <span class="field-validation-valid" data-valmsg-for="nombre" data-valmsg-replace="true"></span>
+                </div>
+                <div class="form-group">
+                    <div style="padding-bottom:5px;float:left;padding-right:10px;"><label>@Resources.Active</label></div>
+                    <input type="checkbox" name="active" id="active" @((Model.estudio != null && Model.estudio.Active == 1) ? "checked" : "")> 
+                </div>
+                <div class="form-group">
+                    <label>@Resources.Year</label>
+                    <input data-val="true" data-val-required="@Resources.RequiredField" data-val-number="@Resources.WrongValue" data-val-length="@Resources.WrongValue" data-val-length-min="4" data-val-length-max="4" id="año" name="año" type="text" class="form-control" value="@(Model.estudio != null ? Model.estudio.Año.ToString() : "")" />
+                    <span class="field-validation-valid" data-valmsg-for="año" data-valmsg-replace="true"></span>
+                </div>
+                <div class="form-group">
+                    <label>@Resources.Revision</label>
+                    <input data-val="true" data-val-required="@Resources.RequiredField" id="revision" name="revision" type="text" class="form-control" value="@(Model.estudio != null ? Model.estudio.Revision.ToString() : "")" />
+                    <span class="field-validation-valid" data-valmsg-for="revision" data-valmsg-replace="true"></span>
+                </div>
+                <div class="form-group">
+                    <label>@Resources.Volume</label>
+                    <input data-val="true" data-val-required="@Resources.RequiredField" id="volumen" name="volumen" type="text" class="form-control" value="@(Model.estudio != null ? Model.estudio.Volumen.ToString() : "")" />
+                    <span class="field-validation-valid" data-valmsg-for="volumen" data-valmsg-replace="true"></span>
+                </div>
+                <div class="form-group">
+                    <label>Link</label>
+                    <input id="link" name="link" type="text" class="form-control" value="@(Model.estudio != null ? Model.estudio.Link : "")" />
+                </div>
+                <div class="form-group">
+                    <label>@Resources.ComercialName</label>
+                    <input id="nombreComercial" name="nombreComercial" type="text" class="form-control" value="@(Model.estudio != null ? Model.estudio.NombreComercial : "")" />
+                </div>
+                <div class='box'>
+                    <div class='box-header'>
+                        <h3 class='box-title'><b>@Resources.Objectives</b></h3>
+                    </div>
+                    <div class='box-body pad'>
+                        <textarea id="objetivos" name="objetivos" class="textarea" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">@((Model.estudio != null) ? @Model.estudio.Objetivos : "")</textarea>
+                    </div>
+                </div>
+                <div class='box'>
+                    <div class='box-header'>
+                        <h3 class='box-title'><b>@Resources.Method</b></h3>
+                    </div>
+                    <div class='box-body pad'>
+                        <textarea id="metodo" name="metodo" class="textarea" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">@((Model.estudio != null) ? @Model.estudio.Metodo : "")</textarea>
+                    </div>
+                </div>
+                <div class='box'>
+                    <div class='box-header'>
+                        <h3 class='box-title'><b>@Resources.Results</b></h3>
+                    </div>
+                    <div class='box-body pad'>
+                        <textarea id="resultados" name="resultados" class="textarea" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">@((Model.estudio != null) ? @Model.estudio.Resultados : "")</textarea>
+                    </div>
+                </div>
+                <div class='box'>
+                    <div class='box-header'>
+                        <h3 class='box-title'><b>@Resources.Conclusion</b></h3>
+                    </div>
+                    <div class='box-body pad'>
+                        <textarea id="conclusion" name="conclusion" class="textarea" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">@((Model.estudio != null) ? @Model.estudio.Conclusion : "")</textarea>
+                    </div>
+                </div>
+            </div><!-- /.box-body -->
+        </div><!-- /.box -->
+    </div>
+    <div class="col-md-6">
+        <div class="box box-warning">
+            <div class="box-body">
+                <div class="form-group">
+                    <label>@Resources.Image</label>
+                    <input type="file" id="file" name="file" accept="image/*">
+                    <br>
+                    <div id="uploadPreview"></div>
+                </div>
+                <div class="form-group">
+                    <label>@Resources.Comparator</label>
+                    @Html.DropDownListFor(model => model.selectedComparadorId, Model.comparadores, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <label>@Resources.Indication</label>
+                    @Html.DropDownListFor(model => model.selectedIndicacionId, Model.indicaciones, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <label>@Resources.Medicament</label>
+                    @Html.DropDownListFor(model => model.selectedMedicamentoId, Model.medicamentos, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <label>@Resources.Sponsor</label>
+                    @Html.DropDownListFor(model => model.selectedSponsorId, Model.sponsors, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <label>@Resources.FirstAuthor</label>
+                    @Html.DropDownListFor(model => model.primerAutorId, Model.autores, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <label>@Resources.Authors</label>
+                    <div class="input_fields_wrap_autor">
+                        <div style="padding:3px; padding-left:12px; padding-bottom:10px; color:Blue; text-decoration:underline;">
+                            <a href="#" class="add_field_button_autor">@Resources.New</a>
+                        </div>
+                        <!--<div><input type="text" name="mytext[]"></div>-->
+                        @{ 
+                            int i = 0;
+                            foreach (string autorId in Model.selectedAutorIds)
+                            {
+                                foreach (SelectListItem autor in Model.autores)
+                                {
+                                    autor.Selected = (autorId == autor.Value);
+                                }
+                                <div style="padding-bottom:5px;">
+                                    @Html.DropDownList("autorIds", Model.autores, new { @class = "form-control", @style = "display:inline; width:55%;" })
+                                    <a href="#" class="remove_field" style="padding-left:5px;">x</a>
+                                </div>
+                               i++;
+                            }
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box-footer">
+            <button type="submit" class="btn btn-primary">@Resources.Save</button>
+    </div>
+}
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.datepicker').datepicker({autoclose: true}); 
+
+        var wrapper_autor = $(".input_fields_wrap_autor"); 
+        var add_button_autor = $(".add_field_button_autor"); 
+
+        $(add_button_autor).click(function (e) { //on add input button click
+            e.preventDefault();
+            var select = '<div style="padding-bottom:5px;">';
+            select = select + '<select class="form-control" id="autorIds" name="autorIds" style="display:inline; width:55%;">';
+            //select = select + '<input id="estudioId" name="estudioId" type="text" value="" />';
+            var autores = @Html.Raw(Json.Encode(Model.autores));
+            for (var i = 0; i < autores.length; i++)
+            {
+                var a = autores[i];
+                select = select + '<option ' + (i==0 ? 'selected="selected"' : '') + ' value="' + a.Value + '">' + a.Text + '</option>';
+            }
+            select = select + '</select>';
+            select = select + '<a href="#" class="remove_field" style="padding-left:5px;">x</a></div>';
+            $(wrapper_autor).append(select); //add input box
+            $('.datepicker').datepicker({autoclose: true});
+        });
+
+        $(wrapper_autor).on("click", ".remove_field", function (e) { //user click on remove text
+            e.preventDefault(); $(this).parent('div').remove();
+        })
+
+        function readImage(file) {
+
+            var reader = new FileReader();
+            var image  = new Image();
+
+            reader.readAsDataURL(file);  
+            reader.onload = function(_file) {
+                image.src    = _file.target.result;              // url.createObjectURL(file);
+                image.onload = function() {
+                    var w = this.width,
+                        h = this.height,
+                        t = file.type,                           // ext only: // file.type.split('/')[1],
+                        n = file.name,
+                        s = ~~(file.size/1024) +'KB';
+                    $('#uploadPreview').empty();
+                    $('#uploadPreview').html('<img src="'+ this.src +'"> '+w+'x'+h+' <b>'+s+'</b> <br>');
+                };
+                image.onerror= function() {
+                    alert('Invalid file type: '+ file.type);
+                };      
+            };
+
+        }
+        $("#file").change(function (e) {
+            if(this.disabled) return alert('File upload not supported!');
+            var F = this.files;
+            if(F && F[0]) for(var i=0; i<F.length; i++) readImage( F[i] );
+        });
+    });
+</script>

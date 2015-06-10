@@ -1,0 +1,56 @@
+﻿/*loading spin*/
+/* Start by setting display:none to make this hidden.
+   Then we position it in relation to the viewport window
+   with position:fixed. Width, height, top and left speak
+   for themselves. Background we set to 80% white with
+   our animation centered, and no-repeating */
+.loadingSpin {
+    display:    none;
+    position:   relative;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     200px;
+    width:      100%;
+    background: url('../img/ajax-loader_2.gif') 
+                50% 50% 
+                no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+.isLoading {
+    overflow: hidden;
+    display:  block;  
+}
+
+/* offline widget */
+.offline {padding:5px;clear:both;position:relative;color:#fff;margin:0 -15px 30px;}
+
+.offline h3 {text-align:center;background:url(../img/line-horizontal.png) 0 50% repeat-x;text-transform:uppercase;}
+.offline h3 span {padding:0 5px;}
+.offline small {color:rgba(0,0,0,0.4);font-size:11px;margin:0;}
+.offline label {text-transform:uppercase;color:#222;color:rgba(0,0,0,0.8);font-size:12px;line-height:26px;}
+.offline form {margin:10px 0 0 0;}
+.offline input, .offline select {margin-bottom:10px;background-color:#e2e2e2;width:100%;color:#666;}
+.offline button {margin:10px 0 0 0;background-image:url(../img/sprite.png);background-position:100% 50%;padding:0 10px;text-align: left;}
+
+.offline, .offline h3 span {
+	background-color:#f06c24;
+	}
+
+@media screen and (min-width: 235px) {
+	
+}
+
+@media screen and (min-width: 500px) {
+	
+	.offline {border-radius:3px;margin:10px 10px 10px 10px;}
+}
+
+@media screen and (min-width: 820px) {
+	
+	.offline {border-radius:3px;margin:10px 10px 10px 10px;}
+	
+}
+

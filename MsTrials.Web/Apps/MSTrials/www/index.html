@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>MS Trials</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link rel="stylesheet" href="jquery-mobile-1.4.5/jquery.mobile-1.4.5.min.css" />
+<link rel="stylesheet" href="jquery-mobile-1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+<!--<link rel="stylesheet" href="css/jquery.mobile-1.0rc1.min.css" />-->
+<link rel="stylesheet" href="css/styles.css" />
+<link rel="shortcut icon" href="img/favicon.ico" />
+<link rel="stylesheet" href="iScroll/lib/jquery.mobile.iscrollview.css" />
+<link rel="stylesheet" href="iScroll/lib/jquery.mobile.iscrollview-pull.css" />
+
+<script src="js/ApiUsage/TypeDefAsync.js"></script>
+<script src="js/ApiUsage/OnlineTester.js"></script>
+
+<script src="js/jquery.js"></script>
+<script src="jquery-mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/ApiUsage/jquery.jsonp-2.4.0.min.js"></script>
+<!--<script src="js/cordova-1.9.0.min.js"></script>-->
+<!--<script type="text/javascript" charset="utf-8" src="phonegap.js"></script>-->
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+<script type="text/javascript" src="iScroll/lib/iScroll.js"></script>
+<script type="text/javascript" src="iScroll/lib/jquery.mobile.iscrollview.js"></script>
+
+<script src="js/imgcache/imgcache.js"></script>
+
+</head>
+    
+<body>
+        
+<div id="studyListPage" data-role="page" >
+
+    <div data-role="header" data-position="fixed" data-tap-toggle="false" data-transition="none" class="backgroundToolbarColor">
+        <h1 id="hPageTitle" class="toolbarFontColor">MS Trials</h1>
+        <a href="studyRefineSearch.html" onclick="globalMode = 'home'; setCalledFromIndex();" data-icon="search" class="ui-btn-right" id="aRefine">Refine</a>
+    </div>
+    <div id="informAppOffline" class="offline" style="display: none;">
+        <h3><span id="offlineText"></span></h3>
+    </div>
+    <form class="ui-filterable">
+        <input id="filterBasic-input" data-type="search" placeholder="" />
+    </form>
+    <div id="divNoItemsFound" style="width:100%; text-align:center; display: none;"></div>
+    <div data-role="content" id="content_table" data-iscroll>
+        <div class="iscroll-pulldown">
+            <span class="iscroll-pull-icon"></span>
+            <span class="iscroll-pull-label"></span>
+        </div>
+        
+        <ul id="studyList" data-role="listview" data-filter="true" data-input="#filterBasic-input" class="has-odd-thumb">
+        </ul>
+        <!--<div class="iscroll-pullup">
+            <span class="iscroll-pull-icon"></span>
+            <span class="iscroll-pull-label"></span>
+        </div>-->
+    </div>		
+    <div data-role="footer" data-position="fixed" data-tap-toggle="false" data-transition="none">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li><a href="javascript:void(0)" data-icon="home" class="ui-btn-active" id="aStudies">Studies</a></li>
+                <li><a href="ranking.html" data-icon="star" id="aRanking">Ranking</a></li>
+                <li><a href="contactForm.html" data-icon="mail" id="aContact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<script src="js/studyList.js"></script>
+<script src="js/ranking.js"></script>
+<script src="js/studyDetails.js"></script>
+<script src="js/studyRefineSearch.js"></script>
+<script src="js/showDetails.js"></script>
+<script src="js/contactForm.js"></script>
+
+</body>
+
+</html>

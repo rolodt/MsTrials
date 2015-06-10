@@ -1,0 +1,97 @@
+﻿<div id="wrapper">
+    <h1 id="hContacto">Contacto</h1>
+
+    <div style="width:100%">
+
+        <div class="one_third" id="divFormContacto" style="width:30%">
+            <h3 id="hFormularioContacto">Formulario de contacto</h3>
+
+            <!--<p>Fully functional contact form with validation. Just set your email address and the message will be send to your inbox. All fields are required.</p>-->
+
+            <br />
+            <form id="myForm">
+                <!--<div class="form-group">
+                    <label id="lMotivo">Motivo <em>(obligatorio)</em></label>
+                
+                    <input data-val="true" data-val-required="*" type="text" name="subject" id="subject" class="required subject" size="28" style="margin-bottom:0px;">
+                    <span class="field-validation-valid" data-valmsg-for="subject" data-valmsg-replace="true"></span>
+                </div>
+                <br />
+                <div class="form-group">
+                    <label id="lNombre">Nombre <em>(obligatorio)</em></label>
+                    <input data-val="true" data-val-required="*" type="text" name="name" id="name" class="required name" size="28" style="margin-bottom:0px;">
+                    <span class="field-validation-valid" data-valmsg-for="name" data-valmsg-replace="true"></span>
+                </div>-->
+                <div class="form-group">
+                    En caso de problemas técnicos con la descarga de la aplicación o la visualización del sitio y consultas relacionadas con contenidos, ingrese su E-Mail para que nos contactemos a la brevedad
+                </div>
+                <br/>
+                <div class="form-group">
+                    <label id="lEmail">E-mail <em>(obligatorio)</em></label>
+                    <input data-val="true" data-val-required="*" type="text" name="email" id="email" class="required email" size="28" style="margin-bottom:0px;">
+                    <span class="field-validation-valid" data-valmsg-for="email" data-valmsg-replace="true"></span>
+                </div>
+                <br />
+                <button id="sendEmail">Enviar</button>
+            </form>
+            <div class="loadingSpin" id="loadingSpinDiv" style="height:50px;"></div>
+        </div>
+
+        <div class="one_third last" id="divImagenContacto" style="width:65%;">
+            <img src="~/Resources/img/contacto.jpg" alt="">
+        </div>
+
+        <div class="clear"></div>
+
+        <div id="results"></div>
+
+    </div>
+</div><!-- /wrapper -->
+
+<div class="testimonial">
+</div><!-- /testimonial -->
+
+<script type="text/javascript">
+    $('#aContacto').attr('id', 'current');
+
+    function loadFirstChildLevelResources(resources) {
+        document.title = 'MS Trials - ' + resources[langSelected]['contact'];
+        $('#hContacto').html(resources[langSelected]['contact']);
+        $('#hFormularioContacto').html(resources[langSelected]['contactForm']);
+        $('#lMotivo').html(resources[langSelected]['subject'] + ' <em>' + resources[langSelected]['mandatory'] + '</em>');
+        $('#lNombre').html(resources[langSelected]['name'] + ' <em>' + resources[langSelected]['mandatory'] + '</em>');
+        $('#lEmail').html('E-mail' + ' <em>' + resources[langSelected]['mandatory'] + '</em>');
+        $('#sendEmail').html(resources[langSelected]['sendButton']);
+    }
+
+    $(document).ready(function () {
+
+        $("#myForm").on('submit', function (e) {
+            $('#sendEmail').validate();
+            if (!$('#myForm').valid()) {
+                return;
+            }
+
+            //avoid submitting
+            e.preventDefault();
+
+            $('#loadingSpinDiv').addClass('isLoading');
+            TypeDefAsync.sendEmail({ subject: $('#subject').val(), name: $('#name').val(), email: $('#email').val() },
+                function () {
+                    $('#loadingSpinDiv').removeClass('isLoading');
+                    var target = $("#results");
+                    target.empty();
+                    target.append('<h3>' + (localStorage.getItem(resourcesStorageKey) != null ? JSON.parse(localStorage.getItem(resourcesStorageKey))[$('#lang').val()]['contactSucceed'] : 'Se ha enviado exitosamente!') + '</h3>');
+                },
+                function (error) {
+                    $('#loadingSpinDiv').removeClass('isLoading');
+                    var target = $("#results");
+                    target.empty();
+                    target.append('<h3 class="text-error">' + error.errorMsg + '</h3>');
+                }
+            )}
+        );
+
+        //$('#divImagenContacto').height($('#divFormContacto').height());
+   });
+</script>

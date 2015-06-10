@@ -1,0 +1,162 @@
+﻿<div id="wrapper">
+    <input type="hidden" id="estudioId" value="@ViewBag.estudioId" />
+    <h1 id="studyTitle"></h1>
+
+    <ul class="listing-info">
+        <li id="año"></li>
+        <li id="revision"></li>
+        <li id="volumen"></li>
+    </ul>
+
+    <div id="slider">
+        <ul class="rslides">
+            <li>
+                
+                    <img src="" alt="" id="imgEstudio">
+                    <div class="rslides-content">
+                        <h2>MS Trials</h2>
+                        <a href="" id="linkEstudio">
+                            <p id="">Ir a la publicación on-line</p>
+                        </a>
+                    </div>       
+            </li>
+        </ul>
+    </div>
+
+    <div class="one_third">
+        <h2 id="hObjetivos">Objetivos</h2>
+        <p id="pObjetivos"></p>
+
+        <span class="price" id="primerAutor"></span>
+
+        <h2 id="hMetodo">Método</h2>
+        <p id="pMethod"></p>
+
+</div>
+
+    <div class="one_third">
+        <h2 id="hAutores">Autores</h2>
+
+        <ul class="features" id="autores">
+        </ul>
+
+        <h2 id="hResultados">Resultados</h2>
+        <p id="pResults"></p>
+
+    </div>
+
+    <div class="one_third last">
+        <h2 id="hMasInformacion">Más información</h2>
+        <p>
+            <span class="lista_info" id="sMedicamento">Medicamento:</span> <span id="moreMedicament"></span><br/>
+            <span class="lista_info" id="sNombreComercial">Nombre Comercial:</span> <span id="moreComercialName"></span><br />
+            <span class="lista_info" id="sComparador">Comparador:</span> <span id="moreComparator"></span><br />
+            <span class="lista_info" id="sIndicacion">Indicación:</span> <span id="moreIndication"></span><br />
+            <span class="lista_info">Sponsor:</span> <span id="moreSponsor"></span>
+        </p>
+
+        <h2 id="hConclusion">Conclusión</h2>
+        <p><span class="conclusion" id="sConclusion"></span></p>
+    </div>
+
+    <div class="clear"></div>
+</div><!-- /wrapper -->
+
+<div class="testimonial">
+</div><!-- /testimonial -->
+
+<script type="text/javascript">
+    $('#aEstudios').attr('id', 'current');
+
+    function loadFirstChildLevelResources(resources) {
+        document.title = 'MS Trials - ' + resources[langSelected]['studies'];
+        $('#hObjetivos').html(resources[langSelected]['objectives']);
+        $('#hMetodo').html(resources[langSelected]['method']);
+        $('#hAutores').html(resources[langSelected]['authors']);
+        $('#hResultados').html(resources[langSelected]['results']);
+        $('#hMasInformacion').html(resources[langSelected]['moreInformation']);
+        $('#sNombreComercial').html(resources[langSelected]['comercialName'] + ':');
+        $('#sMedicamento').html(resources[langSelected]['medicament'] + ':');
+        $('#sComparator').html(resources[langSelected]['comparator'] + ':');
+        $('#sIndicacion').html(resources[langSelected]['indication'] + ':');
+        $('#hConclusion').html(resources[langSelected]['conclusion']);
+    }
+
+    $(document).ready(function () {
+        TypeDefAsync.incrementEstudioViews({ estudioId: $('#estudioId').val() });
+        TypeDefAsync.getEstudioById({ estudioId: $('#estudioId').val() }, "estudio" + $('#estudioId').val(),
+            function (result) {
+                if (result != undefined) {
+                    var target = $("#studyTitle");
+                    target.html(result.titulo);
+
+                    console.log(result.link);
+                    target = $("#linkEstudio");
+                    target.attr("href", result.link);
+
+                    console.log(result.imageUrl);
+                    target = $("#imgEstudio");
+                    target.attr("src", result.imageUrl);
+
+                    target = $("#año");
+                    target.html((localStorage.getItem(resourcesStorageKey) != null ? JSON.parse(localStorage.getItem(resourcesStorageKey))[$('#lang').val()]['year'] : 'Año') + ' ' + result.anio);
+
+                    target = $("#revision");
+                    target.html('Rev. ' + result.revision);
+
+                    target = $("#volumen");
+                    target.html('Vol.' + result.volumen);
+
+                    target = $("#primerAutor");
+                    var html = '<span class="price">';
+                    for (x = 0; x < result.primerAutor.length; x++) {
+                        html += '<span class="char' + (x + 1) + '">' + result.primerAutor.charAt(x) + '</span>';
+                    }
+                    html += '</span>';
+                    target.html(html);
+
+                    target = $("#pObjetivos");
+                    target.html(result.objetivos);
+
+                    target = $("#pMethod");
+                    target.html(result.metodo);
+
+                    target = $("#pResults");
+                    target.html(result.resultados);
+
+                    target = $("#sConclusion");
+                    target.html(result.conclusion);
+
+                    target = $("#autores");
+                    target.empty();
+                    html = '';
+                    for (var i = 0; i < result.autores.length; i++) {
+                        html += '<li>' + result.autores[i] + '</li>';
+                    }
+                    target.append(html);
+
+                    target = $("#moreMedicament");
+                    target.html(result.medicamento);
+
+                    target = $("#moreComercialName");
+                    target.html(result.nombreComercial);
+
+                    target = $("#moreIndication");
+                    target.html(result.indicacion);
+
+                    target = $("#moreComparator");
+                    target.html(result.comparador);
+
+                    target = $("#moreSponsor");
+                    target.html(result.sponsor);
+
+                }
+            },
+            function (error) {
+                //var target = $("#results");
+                //target.empty();
+                //target.append('<h3 class="text-error">' + error.errorMsg + '</h3>');
+            }
+       );
+   });
+</script>

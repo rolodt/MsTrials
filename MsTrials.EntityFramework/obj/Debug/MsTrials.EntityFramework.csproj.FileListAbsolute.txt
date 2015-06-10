@@ -1,3 +1,33 @@
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.EntityFramework\bin\Debug\MsTrials.EntityFramework.dll.config
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.EntityFramework\bin\Debug\MsTrials.EntityFramework.dll
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.EntityFramework\bin\Debug\MsTrials.EntityFramework.pdb
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.EntityFramework\bin\Debug\Abp.dll
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.EntityFramework\bin\Debug\Abp.EntityFramework.dll
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.EntityFramework\bin\Debug\Castle.Core.dll
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.EntityFramework\bin\Debug\Castle.Facilities.Logging.dll
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.EntityFramework\bin\Debug\Castle.Windsor.dll
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.EntityFramework\bin\Debug\EntityFramework.dll
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.EntityFramework\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.EntityFramework\bin\Debug\MsTrials.Core.dll
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.EntityFramework\bin\Debug\Nito.AsyncEx.Concurrent.dll
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.EntityFramework\bin\Debug\Nito.AsyncEx.dll
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.EntityFramework\bin\Debug\Nito.AsyncEx.Enlightenment.dll
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.EntityFramework\bin\Debug\System.Collections.Immutable.dll
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.EntityFramework\bin\Debug\MsTrials.Core.pdb
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.EntityFramework\bin\Debug\Abp.xml
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.EntityFramework\bin\Debug\Abp.EntityFramework.xml
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.EntityFramework\bin\Debug\Castle.Core.xml
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.EntityFramework\bin\Debug\Castle.Facilities.Logging.xml
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.EntityFramework\bin\Debug\Castle.Windsor.xml
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.EntityFramework\bin\Debug\EntityFramework.xml
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.EntityFramework\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.EntityFramework\bin\Debug\Nito.AsyncEx.xml
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.EntityFramework\bin\Debug\Nito.AsyncEx.Concurrent.xml
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.EntityFramework\bin\Debug\Nito.AsyncEx.Enlightenment.xml
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.EntityFramework\bin\Debug\System.Collections.Immutable.xml
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.EntityFramework\obj\Debug\MsTrials.EntityFramework.csprojResolveAssemblyReference.cache
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.EntityFramework\obj\Debug\MsTrials.EntityFramework.dll
+C:\Users\Diego\Documents\GitHub\MsTrials\MsTrials.EntityFramework\obj\Debug\MsTrials.EntityFramework.pdb
 C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.EntityFramework\bin\Debug\MsTrials.EntityFramework.dll.config
 C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.EntityFramework\bin\Debug\MsTrials.EntityFramework.dll
 C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.EntityFramework\bin\Debug\MsTrials.EntityFramework.pdb
@@ -28,3 +58,33 @@ C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.Entity
 C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.EntityFramework\obj\Debug\MsTrials.EntityFramework.csprojResolveAssemblyReference.cache
 C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.EntityFramework\obj\Debug\MsTrials.EntityFramework.dll
 C:\Users\ginyaume\Documents\Visual Studio 2013\Projects\MsTrials\MsTrials.EntityFramework\obj\Debug\MsTrials.EntityFramework.pdb
+C:\Users\Rolo\Documents\MsTrials\MsTrials.EntityFramework\bin\Debug\MsTrials.EntityFramework.dll.config
+C:\Users\Rolo\Documents\MsTrials\MsTrials.EntityFramework\bin\Debug\MsTrials.EntityFramework.dll
+C:\Users\Rolo\Documents\MsTrials\MsTrials.EntityFramework\bin\Debug\MsTrials.EntityFramework.pdb
+C:\Users\Rolo\Documents\MsTrials\MsTrials.EntityFramework\bin\Debug\Abp.dll
+C:\Users\Rolo\Documents\MsTrials\MsTrials.EntityFramework\bin\Debug\Abp.EntityFramework.dll
+C:\Users\Rolo\Documents\MsTrials\MsTrials.EntityFramework\bin\Debug\Castle.Core.dll
+C:\Users\Rolo\Documents\MsTrials\MsTrials.EntityFramework\bin\Debug\Castle.Facilities.Logging.dll
+C:\Users\Rolo\Documents\MsTrials\MsTrials.EntityFramework\bin\Debug\Castle.Windsor.dll
+C:\Users\Rolo\Documents\MsTrials\MsTrials.EntityFramework\bin\Debug\EntityFramework.dll
+C:\Users\Rolo\Documents\MsTrials\MsTrials.EntityFramework\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Rolo\Documents\MsTrials\MsTrials.EntityFramework\bin\Debug\MsTrials.Core.dll
+C:\Users\Rolo\Documents\MsTrials\MsTrials.EntityFramework\bin\Debug\Nito.AsyncEx.Concurrent.dll
+C:\Users\Rolo\Documents\MsTrials\MsTrials.EntityFramework\bin\Debug\Nito.AsyncEx.dll
+C:\Users\Rolo\Documents\MsTrials\MsTrials.EntityFramework\bin\Debug\Nito.AsyncEx.Enlightenment.dll
+C:\Users\Rolo\Documents\MsTrials\MsTrials.EntityFramework\bin\Debug\System.Collections.Immutable.dll
+C:\Users\Rolo\Documents\MsTrials\MsTrials.EntityFramework\bin\Debug\MsTrials.Core.pdb
+C:\Users\Rolo\Documents\MsTrials\MsTrials.EntityFramework\bin\Debug\Abp.xml
+C:\Users\Rolo\Documents\MsTrials\MsTrials.EntityFramework\bin\Debug\Abp.EntityFramework.xml
+C:\Users\Rolo\Documents\MsTrials\MsTrials.EntityFramework\bin\Debug\Castle.Core.xml
+C:\Users\Rolo\Documents\MsTrials\MsTrials.EntityFramework\bin\Debug\Castle.Facilities.Logging.xml
+C:\Users\Rolo\Documents\MsTrials\MsTrials.EntityFramework\bin\Debug\Castle.Windsor.xml
+C:\Users\Rolo\Documents\MsTrials\MsTrials.EntityFramework\bin\Debug\EntityFramework.xml
+C:\Users\Rolo\Documents\MsTrials\MsTrials.EntityFramework\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Rolo\Documents\MsTrials\MsTrials.EntityFramework\bin\Debug\Nito.AsyncEx.xml
+C:\Users\Rolo\Documents\MsTrials\MsTrials.EntityFramework\bin\Debug\Nito.AsyncEx.Concurrent.xml
+C:\Users\Rolo\Documents\MsTrials\MsTrials.EntityFramework\bin\Debug\Nito.AsyncEx.Enlightenment.xml
+C:\Users\Rolo\Documents\MsTrials\MsTrials.EntityFramework\bin\Debug\System.Collections.Immutable.xml
+C:\Users\Rolo\Documents\MsTrials\MsTrials.EntityFramework\obj\Debug\MsTrials.EntityFramework.csprojResolveAssemblyReference.cache
+C:\Users\Rolo\Documents\MsTrials\MsTrials.EntityFramework\obj\Debug\MsTrials.EntityFramework.dll
+C:\Users\Rolo\Documents\MsTrials\MsTrials.EntityFramework\obj\Debug\MsTrials.EntityFramework.pdb

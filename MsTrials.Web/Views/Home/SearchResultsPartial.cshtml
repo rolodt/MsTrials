@@ -1,0 +1,28 @@
+﻿@model IList<MsTrials.Web.Models.Estudio>
+
+@if (Model.Count == 0)
+{
+    <h3 class="text-error">No items matched your search query!</h3>
+}
+else
+{
+    <ul class="listing">
+        @foreach (var result in Model)
+        {
+            <li class="one_third">
+                <a href="estudio.html">
+                    <img src="~/Resources/img/listing-1.jpg" alt="">
+                    <h3>@result.Titulo</h3>
+
+                    <span class="price">Autor</span>
+
+                    <ul class="listing-info">
+                        <li>Año @result.Año</li>
+                        <li>Rev. 105</li>
+                        <li>Vol. 54</li>
+                    </ul>
+                </a>
+            </li>
+        }
+    </ul>
+}

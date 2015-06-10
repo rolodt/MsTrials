@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>MS Trials</title>
+
+</head>
+    
+<body>
+        
+<div id="contactPage" data-role="page" >
+
+    <div data-role="header" data-position="fixed" class="backgroundToolbarColor">
+        <h1 id="header" class="toolbarFontColor">MS Trials</h1>
+    </div>
+    <div id="informAppOffline_Contacto" class="offline" style="display: none;">
+        <h3><span id="offlineText_Contacto"></span></h3>
+    </div>
+    <div data-role="content" id="content_table">
+        <form id="myForm">
+            <!--<div class="ui-field-contain">
+                <label id="lName">Name:</label> 
+                <input type="text" id="name" name="name" value="" placeholder="" required /><br>
+            </div>-->
+            <div class="ui-field-contain">
+                <label id="lEmail">E-mail:</label>
+                <input type="email" id="email" name="email" value="" placeholder="" required /><br>
+            </div>
+            <!--<div class="ui-field-contain">
+                <label id="lSubject">Subject:</label>
+                <br>
+                <textarea style="height:100px;" id="subject" name="subject" placeholder="" required></textarea> <br />
+            </div>-->
+            <br />
+            <!--<input type="submit" value="Send" name="sendEmail" id="sendEmail" class="btn">-->
+            <button id="sendEmail">Enviar</button>
+        </form>
+
+        <br />
+        <br />
+
+        <div id="results"></div>
+    </div>		
+
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li><a href="javascript:void(0)" onclick="reloadMainPage = true;  gotoIndex(); /*window.history.back();*/ return true;" data-icon="home" id="aStudies3">Studies</a></li>
+                <li><a href="ranking.html" data-icon="star" id="aRanking3">Ranking</a></li>
+                <li><a href="javascript:void(0)" data-icon="mail" class="ui-btn-active" id="aContact3">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+</body>
+
+</html>

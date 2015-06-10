@@ -10,31 +10,66 @@ namespace MsTrials.Web
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            /*routes.MapRoute(
+                name: "ApiEstudio",
+                url: "api/estudio/{action}/{id}",
+                defaults: new { controller = "ApiEstudio", action="Index", id = UrlParameter.Optional }
+            );*/
+
             //ASP.NET Web API Route Config
             routes.MapHttpRoute(
                 name: "DefaultApi",
-                routeTemplate: "api/{controller}/{id}",
+                routeTemplate: "api/{controller}/{action}/{id}",
                 defaults: new { id = RouteParameter.Optional }
-                );
+            );
 
             routes.MapRoute(
-                name: "Estudio",
-                url: "admin/{controller}/{action}/{id}",
-                defaults: new { controller = "Estudio", action = "Index", id = UrlParameter.Optional }
+                name: "AdminEstudio",
+                url: "admin/estudio/{action}/{id}",
+                defaults: new { controller = "AdminEstudio", action = "Index", id = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
+                name: "AdminAutor",
+                url: "admin/autor/{action}/{id}",
+                defaults: new { controller = "AdminAutor", action = "Index", id = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
+                name: "AdminComparador",
+                url: "admin/comparador/{action}/{id}",
+                defaults: new { controller = "AdminComparador", action = "Index", id = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
+                name: "AdminIndicacion",
+                url: "admin/indicacion/{action}/{id}",
+                defaults: new { controller = "AdminIndicacion", action = "Index", id = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
+                name: "AdminMedicamento",
+                url: "admin/medicamento/{action}/{id}",
+                defaults: new { controller = "AdminMedicamento", action = "Index", id = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
+                name: "AdminSponsor",
+                url: "admin/sponsor/{action}/{id}",
+                defaults: new { controller = "AdminSponsor", action = "Index", id = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
+                name: "AdminDefault",
+                url: "admin",
+                defaults: new { controller = "AdminEstudio", action = "Index", id = UrlParameter.Optional }
             );
 
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
-            );
-
-            routes.MapRoute(
-                name: "Search",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Search", action = "Index", id = UrlParameter.Optional }
-            );
-
+            );    
             
         }
     }

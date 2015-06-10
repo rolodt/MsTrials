@@ -6,6 +6,9 @@ using System.Web.Routing;
 using Abp.Localization;
 using Abp.Localization.Sources.Xml;
 using Abp.Modules;
+using System.Web.Http;
+using WebApiContrib.Formatting.Jsonp;
+using System.Net.Http.Formatting;
 
 namespace MsTrials.Web
 {
@@ -33,6 +36,8 @@ namespace MsTrials.Web
         public override void Initialize()
         {
             IocManager.RegisterAssemblyByConvention(Assembly.GetExecutingAssembly());
+
+            GlobalConfiguration.Configuration.Formatters.Insert(0, new JsonpMediaTypeFormatter(new JsonMediaTypeFormatter()));
 
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
