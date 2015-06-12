@@ -61,7 +61,7 @@
 
     $(document).ready(function () {   
         $("#submit").click(function () {
-            executeGetEstudiosByFilter();
+            executeGetEstudiosByFilter(true);
         });
         executeGetEstudiosByFilter();
 
@@ -69,7 +69,7 @@
     });
 
    
-    function executeGetEstudiosByFilter() {
+    function executeGetEstudiosByFilter(isInvokedFromSearchButton) {
 
         var target = $("#search-results");
         target.empty();
@@ -80,6 +80,11 @@
                 "estudiosSugeridos",
                 function (result) {
                     $('#loadingSpinDiv').removeClass('isLoading');
+
+                    if (isInvokedFromSearchButton) {
+                        var resources = JSON.parse(localStorage.getItem(resourcesStorageKey));
+                        $('#sEstudiosRecomendados').html(resources[langSelected]['searchResults']);
+                    }
 
                     var html = '';
                     if (result == undefined || result.length == 0) {
